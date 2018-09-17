@@ -1,8 +1,20 @@
 {
-    "plugins": ["autocover"],
+    "title": "Developing Cross-Platform Apps",
+    "author": "Dimitar Minchev",
     "pluginsConfig": {
         "autocover": {
-            // Configuration for autocover (see below)
+            "font": {
+                "size": null,
+                "family": "Impact",
+                "color": "#FFF"
+            },
+            "size": {
+                "w": 1800,
+                "h": 2360
+            },
+            "background": {
+                "color": "#09F"
+            }
         }
     }
 }
