@@ -18,6 +18,7 @@
     * [Clicker Mania 2.0](chapter1/15.md)
     * [HTML Downloader 1.0](chapter1/16.md)
     * [RSS Reader 1.0](chapter1/17.md)
+	* [JSON Reader 1.0](chapter1/18.md)
 * [Mултиплатформени мобилни приложения](chapter2/01.md)
   * [История](chapter2/02.md)
   * [Приложения](chapter2/03.md)
@@ -27,6 +28,7 @@
     * [Clicker Mania 3.0](chapter2/07.md)
     * [HTML Downloader 2.0](chapter2/08.md)
     * [RSS Reader 2.0](chapter2/09.md)
+	* [JSON Reader 2.0](chapter2/10.md)
 
 
 
