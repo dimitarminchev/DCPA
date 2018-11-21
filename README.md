@@ -27,4 +27,3 @@
 **Личен**: моб. +359 899 148 872 и e-mail: [dimitar.minchev@gmail.com](mailto:dimitar.minchev@gmail.com)
 
 **Блог**: [http://www.minchev.eu](http://www.minchev.eu "Димитър Минчев")
-
