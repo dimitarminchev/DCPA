@@ -2,7 +2,7 @@
 
 Настоящата книга "**Developing Cross-Platform Apps**" е структурирана в две глави. Глава 1 е озаглавена "Универсални Windows приложения" и въвежда читателя във вълнуващия свят на Microsoft технологиите за разработка на универсални приложения за платформа Windows. Глава 2 е озаглавена "Mултиплатформени мобилни приложения" и въвежда читателя във вълнуващия свят на Microsoft технологиите за разработка на мултиплатформени мобилни приложения.
 
-Тази книга се разпространява под лиценз [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/ "CC-BY-NC-SA") и е налична за безплатно свободно изтегляне в електронен формат \(pdf, mobi, epub\) в Интернет на адрес: [https://legacy.gitbook.com/book/dimitarminchev/developing-cross-platform-apps](https://legacy.gitbook.com/book/dimitarminchev/developing-cross-platform-apps), а използваните материали са достъпни в електронното хранилище GitHub в Интернет на адрес: [https://git.gitbook.com/dimitarminchev/developing-cross-platform-apps.git](https://git.gitbook.com/dimitarminchev/developing-cross-platform-apps.git)
+Тази книга се разпространява под лиценз [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/ "CC-BY-NC-SA") и е налична за безплатно свободно изтегляне в електронен формат \(pdf, mobi, epub\) в Интернет на адрес: [https://dimitarminchev.gitbooks.io/developing-cross-platform-apps](https://dimitarminchev.gitbooks.io/developing-cross-platform-apps), а използваните материали са достъпни в електронното хранилище GitHub в Интернет на адрес: [https://github.com/dimitarminchev/DCPA](https://github.com/dimitarminchev/DCPA)
 
 | FORMAT | ISBN |
 | :--- | :--- |
