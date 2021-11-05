@@ -29,3 +29,4 @@
     * [HTML Downloader 2.0](chapter2/08.md)
     * [RSS Reader 2.0](chapter2/09.md)
     * [JSON Reader 2.0](chapter2/10.md)
+* [Заключение](NOTES.md)

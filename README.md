@@ -2,6 +2,8 @@
 
 Настоящата електронна книга "**Developing Cross-Platform Apps**" е структурирана в две глави. Глава 1 е озаглавена "Универсални Windows приложения" и въвежда читателя във вълнуващия свят на Microsoft технологиите за разработка на универсални приложения за платформа Windows. Глава 2 е озаглавена "Mултиплатформени мобилни приложения" и въвежда читателя във вълнуващия свят на Microsoft технологиите за разработка на мултиплатформени мобилни приложения.
 
+## Формат и лиценз
+
 Учебното пособие е налично за свободно четене под формата на GitBook базиран [електронен формат](https://dimitar-minchev.gitbook.io/developing-cross-platform-apps/). Учебните ресурси са налични за свободно изтегляне от GitHub базирано [електронно хранилище](https://github.com/dimitarminchev/DCPA/). Всични учебни материали се разпространяват под безплатен лиценз [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 | Формат | ISBN |
@@ -16,6 +18,6 @@
 
 || Контакт |
 | :--- | :--- |
-| Служебен | тел. +359 56 900 477 и e-mail: [mitko@bfu.bg](http://www.minchev.eu/about/mitko@bfu.bg) |
-| Личен | моб. +359 899 148 872 и e-mail: [dimitar.minchev@gmail.com](mailto:dimitar.minchev@gmail.com) |
-| Блог | [http://www.minchev.eu](http://www.minchev.eu "Димитър Минчев") |
+| Служебен | +359 56 900 477 и [mitko@bfu.bg](http://www.minchev.eu/about/mitko@bfu.bg) |
+| Личен | +359 899 148 872 и [dimitar.minchev@gmail.com](mailto:dimitar.minchev@gmail.com) |
+| Блог | [http://www.minchev.eu](http://www.minchev.eu "Димитър Минчев") 
