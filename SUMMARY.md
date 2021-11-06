@@ -1,6 +1,7 @@
 # Съдържание
 
 * [Въведение](README.md)
+
 * [Универсални Windows приложения](chapter1/01.md)
   * [История](chapter1/02.md)
     * [Мобилни устройства](chapter1/03.md)
@@ -19,6 +20,7 @@
     * [HTML Downloader 1.0](chapter1/16.md)
     * [RSS Reader 1.0](chapter1/17.md)
     * [JSON Reader 1.0](chapter1/18.md)
+
 * [Mултиплатформени мобилни приложения](chapter2/01.md)
   * [История](chapter2/02.md)
   * [Приложения](chapter2/03.md)
@@ -29,4 +31,10 @@
     * [HTML Downloader 2.0](chapter2/08.md)
     * [RSS Reader 2.0](chapter2/09.md)
     * [JSON Reader 2.0](chapter2/10.md)
-* [Заключение](NOTES.md)
+
+* [Заключение](about/0_SUMMARY.md)
+  * [Бележка](about/1_NOTE.md)
+  * [Книга](about/2_BOOK.md)
+  * [Автор](about/3_AUTHOR.md)
+  * [Лиценз](about/4_LICENSE.md)
+  * [Формат](about/5_FORMAT.md)
