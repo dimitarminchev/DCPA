@@ -6,6 +6,7 @@
 - **Личен**: +359 899 148 872 и [dimitar.minchev@gmail.com](mailto:dimitar.minchev@gmail.com)
 - **Блог**: [http://www.minchev.eu](http://www.minchev.eu "Димитър Минчев") 
 
-## Последни думи
-
+{% hint style='tip' %}
+#### Съвет
 Пожелавам Ви много забавление, провали и успехи използваки Microsoft технологиите за разработка на универсални Windows приложения и мултиплатформени мобилни приложения.
+{% endhint %}
