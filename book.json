@@ -2,13 +2,6 @@
     "title": "Developing Cross-Platform Apps",
     "author": "Dimitar Minchev",
     "gitbook": "3.2.3",
-    "styles": {
-        "website": "style.css",
-        "ebook": "style.css",
-        "pdf": "style.css",
-        "mobi": "style.css",
-        "epub": "style.css"
-    },
     "plugins": [ 
         "hints"
     ]
