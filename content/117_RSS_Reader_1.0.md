@@ -14,15 +14,14 @@ RSS е софтуерен механизъм за обмен на новини �
 2. Създайте нов проект **Visual C\# &gt; Windows Universal &gt; Blank App \(Universal Windows\)**. 
 3. За име на проекта запишете: **RSS Reader 1.0**.
 
-## FeedItem.cs
+## Item.cs
 
-Добавете нов клас **FeedItem.cs**, който ще служи за съхранение на данни за всяка една новина от емисията.
+Добавете нов клас **Item.cs**, който ще служи за съхранение на данни за всяка една новина от емисията.
 
 ```csharp
 namespace RSS_Reader_1._0
 {
-    // RSS Feed Item
-    public class FeedItem
+    public class Item
     {
         public string Title { get; set; }
         public string Link { get; set; }
@@ -40,6 +39,7 @@ namespace RSS_Reader_1._0
     x:Class="RSS_Reader_1._0.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RSS_Reader_1._0"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
@@ -47,9 +47,17 @@ namespace RSS_Reader_1._0
 
     <!-- User Interface (UI): RSS Reader 1.0 -->
     <StackPanel Background="Lime" Padding="20">
-        <TextBlock Text="RSS Reader 1.0" FontSize="32" />
+        
+        <!-- Title -->
+        <TextBlock Text="RSS Reader 1.0" FontSize="40" />
+
+        <!-- URI -->
+        <TextBox Name="URI" Text="https://www.minchev.eu/feed/" FontSize="20" />
+        <Button Content="Download" Margin="0 10" Padding="20 10" FontSize="20" Click="Button_Click" />
+
+        <!-- RSS -->
         <ScrollViewer>
-            <ListView Name="RSSItems">
+            <ListView Name="RSS">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel>
@@ -65,13 +73,12 @@ namespace RSS_Reader_1._0
             </ListView>
         </ScrollViewer>
     </StackPanel>
-
 </Page>
 ```
 
 Изглед от дизайна на потребителският интерфейс \(XAML\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
 
-![](/images/44.png)
+![](/images/44_RSS_Reader_1.0_UI.png)
 
 _Фиг. 44. Изглед от дизайна на потребителският интерфейс_
 
@@ -82,47 +89,51 @@ _Фиг. 44. Изглед от дизайна на потребителския�
 ```csharp
 using System;
 using System.Collections.ObjectModel;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.Web.Syndication;
 
 namespace RSS_Reader_1._0
 {
-    // Business Logic(BL): RSS Reader 1.0
+    /// <summary>
+    /// Business Logic(BL): RSS Reader 1.0
+    /// </summary>
     public sealed partial class MainPage : Page
     {
         // View Model
-        private ObservableCollection<FeedItem> RSSFeed = new ObservableCollection<FeedItem>();
+        private ObservableCollection<Item> Items = new ObservableCollection<Item>();
 
         // Constructor
         public MainPage()
         {
             this.InitializeComponent();
-			
-            // RSS
-            RSSItems.ItemsSource = RSSFeed;
-            RSSLoad();
+            RSS.ItemsSource = Items;
         }
 
-        // RSS
-        private async void RSSLoad()
+        // Button Click Event Handler
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var link = new Uri("http://www.minchev.eu/rss/");
+            Download();
+        }
+
+        // Download Handler
+        private async void Download()
+        {
+            var uri = new Uri(URI.Text);
             var client = new SyndicationClient();
-            var feed = await client.RetrieveFeedAsync(link);
+            var feed = await client.RetrieveFeedAsync(uri);
             if (feed != null)
             {
-                foreach (var Node in feed.Items)
+                foreach (var node in feed.Items)
                 {
-                    var Item = new FeedItem
+                    Items.Add(new Item
                     {
-                        Title = Node.Title.Text,
-                        Link = Node.Id,
-                        PublishedDate = Node.PublishedDate.ToString()
-                    };
-                    RSSFeed.Add(Item);
+                        Title = node.Title.Text,
+                        Link = node.Id,
+                        PublishedDate = node.PublishedDate.ToString()
+                    });
                 }
             }
-
         }
     }
 }
@@ -132,12 +143,12 @@ namespace RSS_Reader_1._0
 
 Изглед от бизнес логиката \(C\#\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
 
-![](/images/45.png)
+![](/images/45_RSS_Reader_1.0_BL.png)
 
 _Фиг. 45. Изглед от бизнес логиката на разработваното приложение_
 
 Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.
 
-![](/images/46.png)
+![](/images/46_RSS_Reader_1.0_Run.png)
 
 _Фиг.46 Универсално приложение за четене на Интернет новинарски емисии от RSS източници_

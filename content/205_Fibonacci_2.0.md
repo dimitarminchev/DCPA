@@ -25,13 +25,19 @@
 
     <!-- User Interface (UI): Fibonacci 2.0 -->
     <StackLayout Padding="20">
-        <Label Text="Фибоначи 2.0" FontSize="Large" />
-        <Label Text="Ограничение" />
-        <Entry x:Name="EntryLimit" Keyboard="Numeric" Text="1000" />
-        <ListView x:Name="ListViewNumbers" />
-        <Button Text="Генерирай" Clicked="OnButtonClicked" />
+        
+        <!-- Title -->
+        <Label Text="Fibonacci 2.0" FontSize="Large" />
+        
+        <!-- Limit -->
+        <Label Text="Limit" />
+        <Entry x:Name="boxLimit" Keyboard="Numeric" Text="1000" />
+        <Button Text="Generate" Clicked="OnButtonClicked" />
+        
+        <!-- Numbers -->
+        <ListView x:Name="boxNumbers" />
+        
     </StackLayout>
-
 </ContentPage>
 ```
 
@@ -46,7 +52,9 @@ using Xamarin.Forms;
 
 namespace Fibonacci_2._0
 {
-    // Business Logic (BL): Fibonacci 2.0
+    /// <summary>
+    /// Business Logic (BL): Fibonacci 2.0
+    /// </summary>
     public partial class MainPage : ContentPage
     {
         // Constructor
@@ -58,19 +66,19 @@ namespace Fibonacci_2._0
         // Button Click Event Handler
         void OnButtonClicked(object sender, EventArgs args)
         {
-            List<int> fib = new List<int>();
-            fib.Add(1);
-            fib.Add(1);
-            int limit = int.Parse(this.EntryLimit.Text);
+            List<int> numbers = new List<int>();
+            numbers.Add(1);
+            numbers.Add(1);
+            int limit = int.Parse(this.boxLimit.Text);
             int a = 1, b = 1, c = a + b;
             while (c < limit)
             {
-                fib.Add(c);
+                numbers.Add(c);
                 a = b;
                 b = c;
                 c = a + b;
             }
-            this.ListViewNumbers.ItemsSource = fib;
+            this.boxNumbers.ItemsSource = numbers;
         }
     }
 }
@@ -80,11 +88,7 @@ namespace Fibonacci_2._0
 
 Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5.**
 
-![](/images/59.png)
+![](/images/58_Fibonacci_2.0.png)
 
-_Фиг.59 Разработка на мултиплатформено мобилно приложение за генериране на редицата от числата на Фибоначи_
-
-![](/images/60.png)
-
-_Фиг.60 Тестване на мултиплатформено мобилно приложение за генериране на редицата от числата на Фибоначи - Android Emulator 7.1 \(API 25\)_
+_Фиг.58 Тестване на мултиплатформено мобилно приложение за генериране на редицата от числата на Фибоначи - Android Emulator 11 \(API 30\)_
 

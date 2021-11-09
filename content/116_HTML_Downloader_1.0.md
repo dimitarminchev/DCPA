@@ -16,14 +16,14 @@ HTML е основният маркиращ език за описание и д
 
 От менюто **Project **&gt; **Manage NuGet Packages** потърсете и инсталирайте пакета **AngleSharp**, като е показано на фигурата:
 
-![](/images/40.png)
+![](/images/40_AngleSharp.png)
 
 _Фиг. 40. Инсталация на допълнителен пакет към проекта_
 
 Допълнителни пакети към проект можете да инсталитрате и алтернативно от менюто: **Tools &gt; NuGet Package Manager &gt; Package Manager Console**, като изпълните следната команда в конзолата:
 
 ```
-PM> Install-Package AngleSharp -Version 0.9.11
+PM> Install-Package AngleSharp -Version 0.16.1
 ```
 
 ## MainPage.xaml
@@ -35,26 +35,34 @@ PM> Install-Package AngleSharp -Version 0.9.11
     x:Class="HTML_Downloader_1._0.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HTML_Downloader_1._0"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <!-- User Interface (UI): HTML Downloader 1.0 -->
-    <StackPanel Background="Yellow" Padding="20">
-        <TextBlock Text="HTML Downloader 1.0" FontSize="32" />
-        <TextBlock Text="URL" />
-        <TextBox Name="URL" Text="http://www.minchev.eu" />
-        <Button Content="Download" Margin="0 10 0 10" Click="Button_Click" />
-        <TextBox Name="HTML" Height="400" TextWrapping="Wrap" IsReadOnly="True" />
-    </StackPanel>
+    <StackPanel Background="LightCoral" Padding="20">
+        
+        <!-- Title -->
+        <TextBlock Text="HTML Downloader 1.0" FontSize="40" />
 
+        <!-- URL -->
+        <TextBlock Text="URL" FontSize="20" />
+        <TextBox Name="URL" Text="http://www.minchev.eu" FontSize="20" />
+        <Button Content="Download" Margin="0 10" Padding="20 10" FontSize="20" Click="Button_Click" />
+        
+        <!-- HTML -->
+        <TextBox Name="HTML" Height="400" TextWrapping="Wrap" IsReadOnly="True" FontSize="20" />
+    
+    </StackPanel>
 </Page>
+
 ```
 
 Изглед от дизайна на потребителският интерфейс \(XAML\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
 
-![](/images/41.png)
+![](/images/41_HTML_Downloader_1.0_UI.png)
 
 _Фиг. 41. Изглед от дизайна на потребителският интерфейс_
 
@@ -63,16 +71,16 @@ _Фиг. 41. Изглед от дизайна на потребителския�
 Файлът **MainPage.xaml.cs** съдържа изходния код от бизнес логиката на разработваното приложение и се пише на програмният език C\#. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение.
 
 ```csharp
-using AngleSharp.Parser.Html;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using AngleSharp.Html.Parser;
 
 namespace HTML_Downloader_1._0
 {
-	/// <summary>
+    /// <summary>
     /// Business Logic (BL): HTML Downloader 1.0
     /// </summary>
     public sealed partial class MainPage : Page
@@ -86,14 +94,14 @@ namespace HTML_Downloader_1._0
         // Button Click Event Handler
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            string html = await Go(new Uri(URL.Text));
-            var temp = new HtmlParser().Parse(html);
+            string html = await Download(new Uri(URL.Text));
+            var temp = new HtmlParser().ParseDocument(html);
             string text = temp.Body.TextContent;
             HTML.Text = text;
         }
 
-        // Get the HTML
-        private async Task<string> Go(Uri link)
+        // Download Handler
+        private async Task<string> Download(Uri link)
         {
             HttpClient client = new HttpClient();
             return await client.GetStringAsync(link);
@@ -106,12 +114,12 @@ namespace HTML_Downloader_1._0
 
 Изглед от бизнес логиката \(C\#\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
 
-![](/images/42.png)
+![](/images/42_HTML_Downloader_1.0_BL.png)
 
 _Фиг. 42. Изглед от бизнес логиката на разработваното приложение_
 
 Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.
 
-![](/images/43.png)
+![](/images/43_HTML_Downloader_1.0_Run.png)
 
 _Фиг.43 Универслано приложение за изтегляне HTML съдържанието на кода от Интернет страница_

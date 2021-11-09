@@ -91,24 +91,101 @@ GitBook version: 3.2.3
 
 ### 8. Стартирайте процедурата за генериране на електронната книга в избран от Вас формат:
 
+- **HTML**
 ```
-gitbook pdf
-gitbook epub
-gitbook mobi
+gitbook build
 ```
-
-Резултат от примерно успешно изпълнение ще изглежда така:
+Резултат от успешно изпълнение ще изглежда така:
 ```
-info: 7 plugins are installed
-info: 6 explicitly listed
+info: 8 plugins are installed
+info: 7 explicitly listed
+info: loading plugin "hints"... OK
 info: loading plugin "highlight"... OK
 info: loading plugin "search"... OK
 info: loading plugin "lunr"... OK
 info: loading plugin "sharing"... OK
 info: loading plugin "fontsettings"... OK
 info: loading plugin "theme-default"... OK
-info: found 30 pages
-info: found 101 asset files
-info: >> generation finished with success in 25.2s !
+info: found 35 pages
+info: found 109 asset files
+warn: "this.generator" property is deprecated, use "this.output.name" instead
+warn: "navigation" property is deprecated
+warn: "book" property is deprecated, use "this" directly instead
+warn: "options" property is deprecated, use config.get(key) instead
+info: >> generation finished with success in 2.2s !
+```
+
+- **PDF**
+```
+gitbook pdf
+```
+Резултат от успешно изпълнение ще изглежда така:
+```
+info: 8 plugins are installed
+info: 7 explicitly listed
+info: loading plugin "hints"... OK
+info: loading plugin "highlight"... OK
+info: loading plugin "search"... OK
+info: loading plugin "lunr"... OK
+info: loading plugin "sharing"... OK
+info: loading plugin "fontsettings"... OK
+info: loading plugin "theme-default"... OK
+info: found 35 pages
+info: found 109 asset files
+warn: "this.generator" property is deprecated, use "this.output.name" instead
+warn: "navigation" property is deprecated
+warn: "book" property is deprecated, use "this" directly instead
+warn: "options" property is deprecated, use config.get(key) instead
+info: >> generation finished with success in 18.1s !
+info: >> 1 file(s) generated
+```
+
+- **EPUB**
+```
+gitbook epub
+```
+Резултат от успешно изпълнение ще изглежда така:
+```
+info: 8 plugins are installed
+info: 7 explicitly listed
+info: loading plugin "hints"... OK
+info: loading plugin "highlight"... OK
+info: loading plugin "search"... OK
+info: loading plugin "lunr"... OK
+info: loading plugin "sharing"... OK
+info: loading plugin "fontsettings"... OK
+info: loading plugin "theme-default"... OK
+info: found 35 pages
+info: found 110 asset files
+warn: "this.generator" property is deprecated, use "this.output.name" instead
+warn: "navigation" property is deprecated
+warn: "book" property is deprecated, use "this" directly instead
+warn: "options" property is deprecated, use config.get(key) instead
+info: >> generation finished with success in 9.6s !
+info: >> 1 file(s) generated
+```
+
+- **MOBI**
+```
+gitbook mobi
+```
+Резултат от успешно изпълнение ще изглежда така:
+```
+info: 8 plugins are installed
+info: 7 explicitly listed
+info: loading plugin "hints"... OK
+info: loading plugin "highlight"... OK
+info: loading plugin "search"... OK
+info: loading plugin "lunr"... OK
+info: loading plugin "sharing"... OK
+info: loading plugin "fontsettings"... OK
+info: loading plugin "theme-default"... OK
+info: found 35 pages
+info: found 111 asset files
+warn: "this.generator" property is deprecated, use "this.output.name" instead
+warn: "navigation" property is deprecated
+warn: "book" property is deprecated, use "this" directly instead
+warn: "options" property is deprecated, use config.get(key) instead
+info: >> generation finished with success in 8.5s !
 info: >> 1 file(s) generated
 ```

@@ -19,17 +19,27 @@
              x:Class="Clicker_Mania_3._0.MainPage">
 
     <!-- User Interface (UI): Clicker Mania 3.0 -->
-    <StackLayout Padding="20">
+    <StackLayout Padding="20" BackgroundColor="Lime">
+
+        <!-- Title -->
         <Label Text="Clicker Mania 3.0" FontSize="Large" />
+
+        <!-- Timer -->
         <Label Text="Timer" />
         <Entry x:Name="Timer" Text="0" />
+
+        <!-- Clicks -->
         <Label Text="Clicks" />
         <Entry x:Name="Clicks" Text="0" />
+
+        <!-- Clicks Per Minute -->
         <Label Text="Clicks Per Minute" />
         <Entry x:Name="CPM" Text="0" />
-        <Button Text="Click" Clicked="OnButtonClicked" />
-    </StackLayout>
 
+        <!-- Button -->
+        <Button Text="Click" Clicked="OnButtonClicked" />
+        
+    </StackLayout>
 </ContentPage>
 ```
 
@@ -80,11 +90,7 @@ namespace Clicker_Mania_3._0
 
 Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.
 
-![](/images/63.png)
+![](/images/60_Clicker_Mania_3.0.png)
 
-_Фиг.63 Разработка на мултиплатформено мобилно приложение отчитащо броя кликове на потребителя за определено време_
-
-![](/images/64.png)
-
-_Фиг. 64 Тестване на мултиплатформено мобилно приложение отчитащо броя кликове на потребителя за определено време - Android Emulator 7.1 \(API 25\)_
+_Фиг.60 Тестване на мултиплатформено мобилно приложение отчитащо броя кликове на потребителя за определено време - Android Emulator 11 \(API 30\)_
 

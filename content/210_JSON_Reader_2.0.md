@@ -17,30 +17,33 @@ JSON или JavaScript Object Notation, е текстово базиран от�
 Добавете допълнителни пакети към проекта като инсталирате: **NewtonSoft.Json** и **AngleSharp**, от менюто: **Tools &gt; NuGet Package Manager &gt; Package Manager Console**, като изпълните следните команди в конзолата:
 
 ```
-PM> Install-Package Newtonsoft.Json -Version 11.0.2
-PM> Install-Package AngleSharp -Version 0.9.11
+PM> Install-Package Newtonsoft.Json -Version 13.0.1
+PM> Install-Package AngleSharp -Version 0.16.1
 ```
 
-## RootObject.cs
+## Root.cs
 
-Добавете нов клас **RootObject.cs**, който ще служи за десериализиране на данните от консумираната услуга.
+Добавете нов клас **Root.cs**, който ще служи за десериализиране на данните от консумираната услуга.
 
 ```csharp
 namespace JSON_Reader_2._0
 {
-    // https://api.chucknorris.io/jokes/random
-    // http://json2csharp.com/
-
-    public class RootObject
+    public class Root
     {
-        public object category { get; set; }
+        public List<object> categories { get; set; }
+        public string created_at { get; set; }
         public string icon_url { get; set; }
         public string id { get; set; }
+        public string updated_at { get; set; }
         public string url { get; set; }
         public string value { get; set; }
     }
 }
 ```
+
+> #### Бележка
+> 1. Заредете и копирайте примерен JSON от: https://api.chucknorris.io/jokes/random
+> 2. Генерирайте C# класа на избрания JSON от: http://json2csharp.com/
 
 ## MainPage.xaml
 
@@ -52,10 +55,16 @@ namespace JSON_Reader_2._0
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="JSON_Reader_2._0.MainPage">
 
-    <!-- JSON Reader 2.0 -->
-    <StackLayout Padding="20">
-        <Label Text="JSON Reader 2.0" FontSize="Medium" />
+    <!-- User Interface (UI): JSON Reader 2.0 -->
+    <StackLayout Padding="20" BackgroundColor="LightGray">
+        
+        <!-- Title -->
+        <Label Text="JSON Reader 2.0" FontSize="Large" />
+        
+        <!-- Button -->
         <Button Text="Tell Me Joke" Clicked="OnButtonClicked" />
+        
+        <!-- Joke -->
         <ScrollView>
             <Label x:Name="Joke" />
         </ScrollView>
@@ -69,15 +78,17 @@ namespace JSON_Reader_2._0
 Файлът **MainPage.xaml.cs** съдържа изходния код от бизнес логиката на разработваното приложение и се пише на програмният език C\#. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение.
 
 ```csharp
-using AngleSharp.Parser.Html;
-using Newtonsoft.Json;
 using System;
 using System.Net.Http;
 using Xamarin.Forms;
+using AngleSharp.Html.Parser;
+using Newtonsoft.Json;
 
 namespace JSON_Reader_2._0
 {
-    // Business Logic (BL): JSON Reader 2.0
+    /// <summary>
+    /// Business Logic (BL): JSON Reader 2.0
+    /// </summary>
     public partial class MainPage : ContentPage
     {
         // Constructor
@@ -94,10 +105,10 @@ namespace JSON_Reader_2._0
             var json = await client.GetStringAsync(new Uri("https://api.chucknorris.io/jokes/random"));
 
             // Deserialize the JSON
-            var joke = JsonConvert.DeserializeObject<RootObject>(json);
+            var joke = JsonConvert.DeserializeObject<Root>(json);
 
             // Parse the HTML
-            var html = new HtmlParser().Parse(joke.value);
+            var html = new HtmlParser().ParseDocument(joke.value);
             var text = html.Body.TextContent;
 
             // Tell the Joke
@@ -111,6 +122,6 @@ namespace JSON_Reader_2._0
 
 Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.
 
-![](/images/69.png)
+![](/images/63_JSON_Reader_2.0.png)
 
-_Фиг. 69. Демонстрация на работата на мулти-платформеното мобилно приложение за изтегляне на вицове за Чък Норис_
+_Фиг. 63. Демонстрация на работата на мулти-платформеното мобилно приложение за изтегляне на вицове за Чък Норис_

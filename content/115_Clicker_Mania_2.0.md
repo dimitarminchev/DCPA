@@ -17,6 +17,7 @@
     x:Class="Clicker_Mania_2._0.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Clicker_Mania_2._0"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
@@ -24,22 +25,33 @@
 
     <!-- User Interface (UI): Clicker Mania 2.0 -->
     <StackPanel Background="Lime" Padding="30">
+        
+        <!-- Title -->
         <TextBlock FontSize="30" Padding="10" HorizontalAlignment="Center" Text="Clicker Mania 2.0" FontWeight="ExtraBlack" />
+
+        <!-- Timer -->
         <TextBlock Text="Timer" FontSize="23" HorizontalAlignment="Center" />
         <TextBlock Name="Timer" Foreground="White" Text="0" FontSize="60" HorizontalAlignment="Center" FontWeight="ExtraBlack" />
+
+        <!-- Clicks -->
         <TextBlock Text="Clicks" FontSize="23" HorizontalAlignment="Center" />
         <TextBlock Name="Clicks" Foreground="White" Text="0" FontSize="60" HorizontalAlignment="Center" FontWeight="ExtraBlack" />
+
+        <!-- Clicks Per Minute -->
         <TextBlock Text="Clicks Per Minute" FontSize="23" HorizontalAlignment="Center" />
         <TextBlock Name="CPM" Foreground="White" Text="0" FontSize="60" HorizontalAlignment="Center" FontWeight="ExtraBlack" />
+        
+        <!-- Button -->
         <Button Content="Click" Padding="50 10 50 10" HorizontalAlignment="Center" FontSize="32" Click="Button_Click" />
+   
     </StackPanel>
-
 </Page>
+
 ```
 
 Изглед от дизайна на потребителският интерфейс \(XAML\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
 
-![](/images/37.png)
+![](/images/37_Clicker_Mania_2.0_UI.png)
 
 _Фиг. 37. Изглед от дизайна на потребителският интерфейс_
 
@@ -93,7 +105,7 @@ namespace Clicker_Mania_2._0
 
 Изглед от бизнес логиката \(C\#\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
 
-![](/images/38.png)
+![](/images/38_Clicker_Mania_2.0_BL.png)
 
 _Фиг. 38. Изглед от бизнес логиката на разработваното приложение_
 
@@ -101,7 +113,7 @@ _Фиг. 38. Изглед от бизнес логиката на разрабо
 
 Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.
 
-![](/images/39.png)
+![](/images/39_Clicker_Mania_2.0_Run.png)
 
 _Фиг.39 Универсално приложение отчитащо броя кликове на потребителя за определено време_
 

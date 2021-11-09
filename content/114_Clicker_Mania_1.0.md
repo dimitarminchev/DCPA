@@ -17,24 +17,40 @@
     x:Class="Clicker_Mania_1._0.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Clicker_Mania_1._0"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <!-- User Interface (UI): Clicker Mania 1.0 --> 
-    <StackPanel Background="Orange" Padding="30">
-        <TextBlock FontSize="32" HorizontalAlignment="Center" Text="ClickerMania 1.0" />
-        <TextBlock Name="Click" HorizontalAlignment="Center" Text="0" FontSize="100" Padding="30" FontWeight="ExtraBlack" />
-        <Button Content="Click" HorizontalAlignment="Center" FontSize="60" Click="Button_Click" />
+    <!-- User Interface (UI): Clicker Mania 1.0 -->
+    <StackPanel Background="Orange" Padding="50">
+        
+        <!-- Title -->
+        <TextBlock FontSize="40" 
+                   HorizontalAlignment="Center" 
+                   Text="Clicker Mania 1.0" />
+       
+        <!-- Clicks -->
+        <TextBlock Name="Clicks" 
+                   HorizontalAlignment="Center" 
+                   Text="0" FontSize="100" Padding="50" 
+                   FontWeight="Black" />
+        
+        <!-- Button -->
+        <Button Content="Click" 
+                HorizontalAlignment="Center" 
+                FontSize="40" 
+                Padding="40 20 40 20"
+                Click="Button_Click" />
+        
     </StackPanel>
-
 </Page>
 ```
 
 Изглед от дизайна на потребителският интерфейс \(XAML\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
 
-![](/images/34.png)
+![](/images/34_Clicker_Mania_1.0_UI.png)
 
 _Фиг. 34. Изглед от дизайна на потребителският интерфейс_
 
@@ -45,6 +61,7 @@ _Фиг. 34. Изглед от дизайна на потребителския�
 ```csharp
 using System;
 using System.IO;
+using System.Text;
 using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -56,10 +73,8 @@ namespace Clicker_Mania_1._0
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        // var
+        // Counter
         private int counter = 0;
-        private StorageFile file;
-        private StorageFolder local = ApplicationData.Current.LocalFolder;
 
         // Constructor
         public MainPage()
@@ -69,14 +84,30 @@ namespace Clicker_Mania_1._0
         }
 
         // Button Click Event Handler
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            counter++;
-            Click.Text = counter.ToString();
-            // Save to file
-            byte[] bytes = System.Text.Encoding.UTF8.GetBytes(Click.Text.ToCharArray());
-            var _file = await local.CreateFileAsync("clicker.txt", CreationCollisionOption.ReplaceExisting);
-            using (var _stream = await _file.OpenStreamForWriteAsync()) _stream.Write(bytes, 0, bytes.Length);
+            counter = counter + 1;
+            Clicks.Text = counter.ToString();
+            Save(Clicks.Text);
+        }
+
+        // Save to File
+        private async void Save(string content)
+        {
+            try
+            {
+                StorageFolder storage = ApplicationData.Current.LocalFolder;
+                byte[] bytes = Encoding.UTF8.GetBytes(content.ToCharArray());
+                var file = await storage.CreateFileAsync("clicker.txt", CreationCollisionOption.ReplaceExisting);
+                using (var stream = await file.OpenStreamForWriteAsync())
+                {
+                    stream.Write(bytes, 0, bytes.Length);
+                }
+            }
+            catch 
+            {
+              // On Error
+            }
         }
 
         // Read from File
@@ -84,22 +115,29 @@ namespace Clicker_Mania_1._0
         {
             try
             {
-                file = await local.GetFileAsync("clicker.txt");
-                if (file == null) file = await local.CreateFileAsync("clicker.txt");
+                StorageFolder storage = ApplicationData.Current.LocalFolder;
+                StorageFile file = await storage.GetFileAsync("clicker.txt");
+                if (file == null)
+                {
+                    file = await storage.CreateFileAsync("clicker.txt");
+                }
                 else
                 {
                     Stream stream = await file.OpenStreamForReadAsync();
                     StreamReader reader = new StreamReader(stream);
-                    Click.Text = reader.ReadToEnd();
-                    if (Click.Text == "")
+                    Clicks.Text = reader.ReadToEnd();
+                    if (Clicks.Text == "")
                     {
-                        Click.Text = "0";
+                        Clicks.Text = "0";
                         counter = 0;
                     }
-                    else counter = int.Parse(Click.Text);
+                    else counter = int.Parse(Clicks.Text);
                 }
             }
-            catch { ;; }
+            catch 
+            {
+                // On Error
+            }
         }
     }
 }
@@ -107,7 +145,7 @@ namespace Clicker_Mania_1._0
 
 Изглед от бизнес логиката \(C\#\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
 
-![](/images/35.png)
+![](/images/35_Clicker_Mania_1.0_BL.png)
 
 _Фиг. 35. Изглед от бизнес логиката на разработваното приложение_
 
@@ -115,7 +153,6 @@ _Фиг. 35. Изглед от бизнес логиката на разрабо
 
 Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.
 
-![](/images/36.png)
+![](/images/36_Clicker_Mania_1.0_Run.png)
 
 _Фиг.36. Универсалано приложение отчитащо броя кликове на потребителя._
-

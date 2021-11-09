@@ -43,8 +43,8 @@ namespace RSS_Reader_2._0
     {
         public IEnumerable<FeedItem> ReadFeed(string url)
         {
-            var rssFeed = XDocument.Load(url);
-            var posts = from item in rssFeed.Descendants("item")
+            var feed = XDocument.Load(url);
+            var posts = from item in feed.Descendants("item")
                         select new FeedItem
                         {
                             Title = item.Element("title").Value,
@@ -58,6 +58,46 @@ namespace RSS_Reader_2._0
 }
 ```
 
+## HyperlinkButton.cs
+
+Добавете клас **HyperlinkButton.cs**, който ще служи за добавяне на хипер-връзки към потребителския интерфейс на приложението, съгласно документацията на Microsoft: [Xamarin.Forms Hyperlinks Microsoft Docs](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/label#hyperlinks)
+
+```cs
+using Xamarin.Forms;
+using Xamarin.Essentials;
+
+namespace RSS_Reader_2._0
+{
+    /// <summary>
+    /// Hyperlink Button Control
+    /// </summary>
+    public class HyperlinkButton : TextCell
+    {
+        // Url Property
+        public static readonly BindableProperty UrlProperty = BindableProperty.Create(
+                               nameof(Url), typeof(string), typeof(HyperlinkButton), null);
+        public string Url
+        {
+            get { return (string)GetValue(UrlProperty); }
+            set { SetValue(UrlProperty, value); }
+        }
+
+        // Constructor
+        public HyperlinkButton()
+        {
+            Tapped += HyperlinkButton_Tapped;
+        }
+
+        // Tapped Event Handler
+        private void HyperlinkButton_Tapped(object sender, System.EventArgs e)
+        {
+            // Launcher.OpenAsync is provided by Xamarin.Essentials.
+            Command = new Command(async () => await Launcher.OpenAsync(Url));
+        }
+    }
+}
+```
+
 ## MainPage.xaml
 
 Файлът **MainPage.xaml** съдържа изходния код от дизайна на потребителския интерфейс на разработваното приложение и се пише на езика XAML. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение.
@@ -66,22 +106,28 @@ namespace RSS_Reader_2._0
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RSS_Reader_2._0"
              x:Class="RSS_Reader_2._0.MainPage">
 
     <!-- User Interface (UI): RSS Reader 2.0 -->
-    <StackLayout Padding="20">
+    <StackLayout Padding="20" BackgroundColor="LightBlue">
+
+        <!-- Title -->
         <Label Text="RSS Reader 2.0" FontSize="Large" />
-        <Entry x:Name="EntryURL" Text="https://www.minchev.eu/feed/" />
+
+        <!-- URI -->
+        <Entry x:Name="URI" Text="https://www.minchev.eu/feed/" />
         <Button Text="Download" Clicked="Button_Clicked" />
-        <ListView x:Name="ListViewRSS">
+
+        <!-- RSS -->
+        <ListView x:Name="RSS">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Title}" Detail="{Binding PubDate}" />
+                    <local:HyperlinkButton Text="{Binding Title}" Detail="{Binding PubDate}" Url="{Binding Link}" />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
-
 </ContentPage>
 ```
 
@@ -122,79 +168,6 @@ namespace RSS_Reader_2._0
 
 Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.
 
-![](/images/67.png)
+![](/images/62_RSS_Reader_2.0.png)
 
-_Фиг.67 Разработка на мултиплатформено мобилно приложение за четене на Интернет новинарски емисии от RSS източници._
-
-![](/images/68.png)
-
-_Фиг.68 Тестване на на мултиплатформено мобилно приложение за четене на Интернет новинарски емисии от RSS източници- Android Emulator 7.1 \(API 25\)._
-
-# Hyperlinks
-
-Актуализация за добавяне на хипер-връзки по документацията: [Xamarin.Forms Hyperlinks Microsoft Docs](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/label#hyperlinks)
-
-## HyperlinkButton.cs
-
-```cs
-using Xamarin.Forms;
-using Xamarin.Essentials;
-
-namespace RSS_Reader_2._0
-{
-    /// <summary>
-    /// Hyperlink Button Control
-    /// </summary>
-    public class HyperlinkButton : TextCell
-    {
-        // Url Property
-        public static readonly BindableProperty UrlProperty = BindableProperty.Create(
-                               nameof(Url), typeof(string), typeof(HyperlinkButton), null);
-        public string Url
-        {
-            get { return (string)GetValue(UrlProperty); }
-            set { SetValue(UrlProperty, value); }
-        }
-
-        // Constructor
-        public HyperlinkButton()
-        {
-            Tapped += HyperlinkButton_Tapped;
-        }
-
-        // Tapped Event Handler
-        private void HyperlinkButton_Tapped(object sender, System.EventArgs e)
-        {
-            // Launcher.OpenAsync is provided by Xamarin.Essentials.
-            Command = new Command(async () => await Launcher.OpenAsync(Url));
-        }
-    }
-}
-```
-
-## MainPage.xaml.cs
-
-```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:RSS_Reader_2._0"
-             x:Class="RSS_Reader_2._0.MainPage">
-
-    <!-- User Interface (UI): RSS Reader 2.0 -->
-    <StackLayout Padding="20">
-        <Label Text="RSS Reader 2.0" FontSize="Large" />
-        <Entry x:Name="EntryURL" Text="https://www.minchev.eu/feed/" />
-        <Button Text="Download" Clicked="Button_Clicked" />
-        <ListView x:Name="ListViewRSS">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <local:HyperlinkButton Text="{Binding Title}" 
-                                           Detail="{Binding PubDate}"
-                                           Url="{Binding Link}" />
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </StackLayout>
-</ContentPage>
-```
+_Фиг.62 Тестване на на мултиплатформено мобилно приложение за четене на Интернет новинарски емисии от RSS източници- Android Emulator 11 \(API 30\)._

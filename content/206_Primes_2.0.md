@@ -25,14 +25,20 @@
              x:Class="Primes_2._0.MainPage">
 
     <!-- User Interface (UI): Primes 2.0 -->
-    <StackLayout Padding="20">
-        <Label Text="Прости 2.0" FontSize="Large" />
-        <Label Text="Ограничение" />
-        <Entry x:Name="EntryLimit" Keyboard="Numeric" Text="1000" />
-        <ListView x:Name="ListViewNumbers" />
-        <Button Text="Генерирай" Clicked="OnButtonClicked" />
-    </StackLayout>
+    <StackLayout Padding="20" BackgroundColor="Yellow">
+        
+        <!-- Title -->
+        <Label Text="Primes 2.0" FontSize="Large" />
 
+        <!-- Limit -->
+        <Label Text="Limit" />
+        <Entry x:Name="boxLimit" Keyboard="Numeric" Text="1000" />
+        <Button Text="Generate" Clicked="OnButtonClicked" />
+        
+        <!-- Numbers -->
+        <ListView x:Name="boxNumbers" />
+        
+    </StackLayout>
 </ContentPage>
 ```
 
@@ -47,7 +53,9 @@ using Xamarin.Forms;
 
 namespace Primes_2._0
 {
-    // Business Logic (BL): Primes 2.0
+    /// <summary>
+    /// Business Logic (BL): Primes 2.0
+    /// </summary>
     public partial class MainPage : ContentPage
     {
         // Constructor
@@ -60,14 +68,14 @@ namespace Primes_2._0
         void OnButtonClicked(object sender, EventArgs args)
         {
             List<int> primes = new List<int>();
-            int limit = int.Parse(this.EntryLimit.Text);
+            int limit = int.Parse(this.boxLimit.Text);
             for (int k = 2; k < limit; k++)
             {
                 bool prime = true;
                 for (int j = 2; j < k; j++) if (k % j == 0) prime = false;
                 if (prime) primes.Add(k);
             }
-            this.ListViewNumbers.ItemsSource = primes;
+            this.boxNumbers.ItemsSource = primes;
         }
     }
 }
@@ -77,11 +85,7 @@ namespace Primes_2._0
 
 Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.
 
-![](/images/61.png)
+![](/images/59_Primes_2.0.png)
 
-_Фиг.61 Разработка на мултиплатформено мобилно приложение за генериране на редица от прости числа._
-
-![](/images/62.png)
-
-_Фиг.62 Тестване на мултиплатформено мобилно приложение за генериране на редица от прости числа - Android Emulator 7.1 \(API 25\)_
+_Фиг.59 Тестване на мултиплатформено мобилно приложение за генериране на редица от прости числа - Android Emulator 11 \(API 30\)_
 

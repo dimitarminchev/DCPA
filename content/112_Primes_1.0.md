@@ -24,26 +24,33 @@
     x:Class="Primes_1._0.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Primes_1._0"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <!-- User Interface (UI): Primes 1.0 -->
-    <StackPanel Background="Pink" Padding="50">
-        <TextBlock Text="Прости 1.0" FontSize="32" />
-        <TextBlock Text="Ограничение" FontSize="23" />
-        <TextBox Name="TextBoxLimit" Text="1000" />
-        <ListBox Name="ListBoxPrim" Height="320" FontSize="23" />
-        <Button Content="Генерирай" FontSize="23" Click="Button_Click" />
-    </StackPanel>
+    <StackPanel Background="Yellow" Padding="50">
 
+        <!-- Title -->
+        <TextBlock Text="Primes 1.0" FontSize="40" />
+        
+        <!-- Limit -->
+        <TextBlock Text="Limit" FontSize="20" />
+        <TextBox Name="boxLimit" Text="1000" FontSize="20" />
+        <Button Content="Generate" Margin="0 10 0 10" Padding="20 10 20 10" FontSize="20"  Click="Button_Click" />
+        
+        <!-- Numbers -->
+        <ListBox Name="boxNumbers" Height="400" FontSize="20" />
+        
+    </StackPanel>
 </Page>
 ```
 
 Изглед от дизайна на потребителският интерфейс \(XAML\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
 
-![](/images/29.png)
+![](/images/29_Primes_1.0_UI.png)
 
 _Фиг. 29. Изглед от дизайна на потребителският интерфейс_
 
@@ -57,7 +64,7 @@ using Windows.UI.Xaml.Controls;
 
 namespace Primes_1._0
 {
-	/// <summary>
+    /// <summary>
     /// Business Logic (BL): Primes 1.0
     /// </summary>
     public sealed partial class MainPage : Page
@@ -71,12 +78,12 @@ namespace Primes_1._0
         // Button Event Handler
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int limit = int.Parse(TextBoxLimit.Text);
+            int limit = int.Parse(boxLimit.Text);
             for (int k = 2; k < limit; k++)
             {
                 bool prime = true;
                 for (int j = 2; j < k; j++) if (k % j == 0) prime = false;
-                if (prime) ListBoxPrim.Items.Add(k);
+                if (prime) boxNumbers.Items.Add(k);
             }
         }
     }
@@ -85,7 +92,7 @@ namespace Primes_1._0
 
 Изглед от бизнес логиката \(C\#\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
 
-![](/images/30.png)
+![](/images/30_Primes_1.0_BL.png)
 
 _Фиг. 30. Изглед от бизнес логиката на разработваното приложение_
 
@@ -93,7 +100,7 @@ _Фиг. 30. Изглед от бизнес логиката на разрабо
 
 Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.
 
-![](/images/31.png)
+![](/images/31_Primes_1.0_Run.png)
 
 _Фиг. 31. Универсално приложение за генериране на редица от прости числа._
 

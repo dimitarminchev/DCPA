@@ -17,7 +17,7 @@ HTML е основният маркиращ език за описание и д
 Инсталирайте допълнителен пакет към приложението от менюто: **Tools &gt; NuGet Package Manager &gt; Package Manager Console**, като изпълните следната команда в конзолата:
 
 ```
-PM> Install-Package AngleSharp -Version 0.9.11
+PM> Install-Package AngleSharp -Version 0.16.1
 ```
 
 ## MainPage.xaml
@@ -31,15 +31,22 @@ PM> Install-Package AngleSharp -Version 0.9.11
              x:Class="HTML_Downloader_2._0.MainPage">
 
     <!-- User Interface (UI): HTML Downloaders 2.0 -->
-    <StackLayout Padding="20">
-        <Label Text="HTML Downloader 2.0" FontSize="Medium" />
-        <Entry x:Name="URL" Text="http://www.minchev.eu" />
+    <StackLayout Padding="20" BackgroundColor="LightCoral">
+
+        <!-- Title -->
+        <Label Text="HTML Downloader 2.0" FontSize="Large" />
+
+        <!-- URL -->
+        <Label Text="URL" FontSize="Large" />
+        <Entry x:Name="URL" Text="https://www.minchev.eu" />
         <Button Text="Download" Clicked="OnButtonClicked" />
+
+        <!-- HTML -->
         <ScrollView>
             <Label x:Name="HTML" />
         </ScrollView>
-    </StackLayout>
 
+    </StackLayout>
 </ContentPage>
 ```
 
@@ -52,11 +59,13 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using AngleSharp.Parser.Html;
+using AngleSharp.Html.Parser;
 
 namespace HTML_Downloader_2._0
 {
-    // Business Logic (BL): HTML Downloader 2.0
+    /// <summary>
+    /// Business Logic (BL): HTML Downloader 2.0
+    /// </summary>
     public partial class MainPage : ContentPage
     {
         // Constructor
@@ -69,18 +78,18 @@ namespace HTML_Downloader_2._0
         private async void OnButtonClicked(object sender, EventArgs args)
         {
             // Get Html
-            string html = await Go(new Uri(this.URL.Text));
+            string html = await Download(new Uri(this.URL.Text));
 
-            // Angle Sharp Parsing
-            var temp = new HtmlParser().Parse(html);
+            // Angle Sharp Html to Text Parser
+            var temp = new HtmlParser().ParseDocument(html);
             string text = temp.Body.TextContent;
 
             // Plain Text
             this.HTML.Text = text;
         }
 
-        // Get the HTML code
-        private async Task<string> Go(Uri link)
+        // Download Handler
+        private async Task<string> Download(Uri link)
         {
             HttpClient client = new HttpClient();
             return await client.GetStringAsync(link);
@@ -93,11 +102,7 @@ namespace HTML_Downloader_2._0
 
 Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.
 
-![](/images/65.png)
+![](/images/61_HTML_Downloader_2.0.png)
 
-_Фиг.65 Разработка на мултиплатформено мобилно приложение за изтегляне HTML съдържанието на кода от Интернет страница._
-
-![](/images/66.png)
-
-_Фиг.66 Тестване на мултиплатформено мобилно приложение за изтегляне HTML съдържанието на кода от Интернет страница - Android Emulator 7.1 \(API 25\)._
+_Фиг.61 Тестване на мултиплатформено мобилно приложение за изтегляне HTML съдържанието на кода от Интернет страница - Android Emulator 11 \(API 30\)._
 
