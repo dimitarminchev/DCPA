@@ -27,6 +27,7 @@
     * [Suma 2.0](content/204_Suma_2.0.md)
     * [Fibonacci 2.0](content/205_Fibonacci_2.0.md)
     * [Primes 2.0](content/206_Primes_2.0.md)
+    * [Phone Book 2.0](content/211_Phone_Book_2.0.md)
     * [Clicker Mania 3.0](content/207_Clicker_Mania_3.0.md)
     * [HTML Downloader 2.0](content/208_HTML_Downloader_2.0.md)
     * [RSS Reader 2.0](content/209_RSS_Reader_2.0.md)
