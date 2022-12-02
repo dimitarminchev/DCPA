@@ -14,11 +14,10 @@ JSON или JavaScript Object Notation, е текстово базиран от�
 2. Създайте нов проект: **Visual C\# &gt; Cross-Platform &gt; Mobile App \(Xamarin.Forms\)**. 
 3. За име на проекта запишете: **JSON Reader 2.0**.
 
-Добавете допълнителни пакети към проекта като инсталирате: **NewtonSoft.Json** и **AngleSharp**, от менюто: **Tools &gt; NuGet Package Manager &gt; Package Manager Console**, като изпълните следните команди в конзолата:
+Добавете допълнителни пакети към проекта като инсталирате: **NewtonSoft.Json** от менюто: **Tools &gt; NuGet Package Manager &gt; Package Manager Console**, като изпълните следните команди в конзолата:
 
 ```
 PM> Install-Package Newtonsoft.Json -Version 13.0.1
-PM> Install-Package AngleSharp -Version 0.16.1
 ```
 
 ## Root.cs
@@ -26,16 +25,23 @@ PM> Install-Package AngleSharp -Version 0.16.1
 Добавете нов клас **Root.cs**, който ще служи за десериализиране на данните от консумираната услуга.
 
 ```csharp
+using System.Collections.Generic;
 namespace JSON_Reader_2._0
 {
     public class Root
     {
         public List<object> categories { get; set; }
+
         public string created_at { get; set; }
+
         public string icon_url { get; set; }
+
         public string id { get; set; }
+
         public string updated_at { get; set; }
+
         public string url { get; set; }
+
         public string value { get; set; }
     }
 }
@@ -55,19 +61,21 @@ namespace JSON_Reader_2._0
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="JSON_Reader_2._0.MainPage">
 
-    <!-- User Interface (UI): JSON Reader 2.0 -->
-    <StackLayout Padding="20" BackgroundColor="LightGray">
-        
+    <!-- JSON Reader 2.0 User Interface -->
+    <StackLayout Padding="50">
+
         <!-- Title -->
-        <Label Text="JSON Reader 2.0" FontSize="Large" />
-        
-        <!-- Button -->
-        <Button Text="Tell Me Joke" Clicked="OnButtonClicked" />
+        <Label Text="JSON Reader 2.0" FontSize="Large" FontAttributes="Bold" />
+
+        <!-- Buttons -->
+        <StackLayout Orientation="Horizontal">
+            <Button Text="New Joke" Clicked="NewJokeButtonClickedEventHandler" />
+            <Button Text="Tell Joke" Clicked="TellJokeButtonClickedEventHandler" />
+        </StackLayout>
         
         <!-- Joke -->
-        <ScrollView>
-            <Label x:Name="Joke" />
-        </ScrollView>
+        <Label x:Name="JOKE" FontSize="Large" />
+
     </StackLayout>
 
 </ContentPage>
@@ -81,38 +89,49 @@ namespace JSON_Reader_2._0
 using System;
 using System.Net.Http;
 using Xamarin.Forms;
-using AngleSharp.Html.Parser;
+using Xamarin.Essentials;
 using Newtonsoft.Json;
 
 namespace JSON_Reader_2._0
 {
-    /// <summary>
-    /// Business Logic (BL): JSON Reader 2.0
-    /// </summary>
     public partial class MainPage : ContentPage
     {
-        // Constructor
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public MainPage()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
-        // Button Event Handler
-        async void OnButtonClicked(object sender, EventArgs args)
+        /// <summary>
+        /// New Joke Button Clicked Event Handler
+        /// </summary>
+        private async void NewJokeButtonClickedEventHandler(object sender, EventArgs e)
         {
-            // Download JSON
+            // 1. Http Client
             HttpClient client = new HttpClient();
-            var json = await client.GetStringAsync(new Uri("https://api.chucknorris.io/jokes/random"));
 
-            // Deserialize the JSON
-            var joke = JsonConvert.DeserializeObject<Root>(json);
+            // 2. Http Request to Receive JSON Response
+            string json = await client.GetStringAsync(new Uri("https://api.chucknorris.io/jokes/random"));
 
-            // Parse the HTML
-            var html = new HtmlParser().ParseDocument(joke.value);
-            var text = html.Body.TextContent;
+            // 3. Deserialize JSON to Object
+            Joke joke = JsonConvert.DeserializeObject<Joke>(json);
 
-            // Tell the Joke
-            this.Joke.Text = text;
+            // 4. Show the Joke in the UI
+            JOKE.Text = joke.value;
+        }
+
+        /// <summary>
+        /// Tell Joke Button Clicked Event Handler
+        /// </summary>
+        private async void TellJokeButtonClickedEventHandler(object sender, EventArgs e)
+        {
+            var joke = JOKE.Text;
+            if (joke != "")
+            {
+                await TextToSpeech.SpeakAsync(joke);
+            }
         }
     }
 }
