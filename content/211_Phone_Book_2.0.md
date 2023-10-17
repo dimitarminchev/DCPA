@@ -150,7 +150,7 @@ namespace Phone_Book_2._0
 
         private async void Button_Clicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new AddPage());
+            await Navigation.PushModalAsync(new AddPage());
         }
     }
 }
@@ -186,7 +186,7 @@ namespace Phone_Book_2._0
 </ContentPage>
 ```
 
-## MainPage.xaml.cs 
+## AppPage.xaml.cs 
 
 Отворете файла **AddPage.xaml.cs**. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение.
 
