@@ -13,7 +13,7 @@
 - [Git](https://git-scm.com/download/win)
 - [Calibre](https://calibre-ebook.com/dist/win64)
 
-### 2. Стартирайте PowerShell като администратор и клонирайте електронното хранилище на книгата:
+### 2. Стартирайте командния промпт като администратор и клонирайте електронното хранилище на книгата:
 ```
 git clone https://github.com/dimitarminchev/DCPA.git
 ```
@@ -55,8 +55,8 @@ TypeError: cb.apply is not a function
 cd C:\Users\mitko\AppData\Roaming\npm\node_modules\gitbook-cli\node_modules\npm\
 npm i graceful-fs@4.1.4 --save
 ```
- 
-### 6. Върнете се в PowerShell командният промпт и довършете инсталацията:
+
+### 6. Върнете се в командният промпт и довършете инсталацията:
 ```
 gitbook install
 ```
@@ -169,3 +169,70 @@ info: >> 1 file(s) generated
 ```
 
 ## Linux
+
+### 1. Актуализиарайте вашата дистрибуция:
+```
+sudo apt-get -y update
+sudo apt-get -y upgrade
+```
+
+### 2. Инсталирайте NodeJs и Calibre:
+```
+sudo apt-get install -y nodejs
+sudo apt-get install -y calibre
+```
+
+### 3. Клонирайте електронното хранилище на книгата
+```
+git clone https://github.com/dimitarminchev/DCPA.git
+```
+
+### 4. Влезте в току що клонираното електронно хранилище на книгата: 
+```
+cd DCPA
+```
+
+### 5. Инсталирайте необходимите модули, като изпълнете следните команди:
+```
+npm install -g ebook-convert 
+npm install -g gitbook-cli
+gitbook install
+```
+
+### 6. Възможно е да получите подобна грешка:
+```
+/mnt/c/Users/mitko/AppData/Roaming/npm/node_modules/gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js:287
+      if (cb) cb.apply(this, arguments)
+                 ^
+TypeError: cb.apply is not a function
+    at /mnt/c/Users/mitko/AppData/Roaming/npm/node_modules/gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js:287:18
+    at FSReqCallback.oncomplete (fs.js:169:5)
+```
+За да поправите тази грешка:
+```
+cd /mnt/c/Users/mitko/AppData/Roaming/npm/node_modules/gitbook-cli/node_modules/npm/
+npm i graceful-fs@4.1.4 --save
+```
+
+### 7. Върнете се в командният промпт и довършете инсталацията:
+```
+gitbook install
+```
+
+### 8. Проверете версията на GitBook с командата:
+```
+gitbook --version
+```
+Резултата може да изглежда по този начин:
+```
+CLI version: 2.3.2
+GitBook version: 3.2.3
+```
+
+### 9. Стартирайте процедурата за генериране на електронната книга в избран от Вас формат:
+```
+gitbook build
+gitbook pdf
+gitbook epub
+gitbook mobi
+```
