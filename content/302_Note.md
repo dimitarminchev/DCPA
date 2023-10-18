@@ -1,24 +1,23 @@
 # Бележка
 
 {% hint style='info' %}
+
 #### Информация
 Как да конвертирате настоящата GitBook електронна книга в PDF, EPUB и/или MOBI файлов формат?
 {% endhint %}
 
-### 1. Инсталирайте следните програмни продукти:
+## Windows
 
+### 1. Инсталирайте следните програмни продукти:
 - [node.js](https://nodejs.org/en/download/)
 - [Git](https://git-scm.com/download/win)
 - [Calibre](https://calibre-ebook.com/dist/win64)
 
 ### 2. Стартирайте PowerShell като администратор и клонирайте електронното хранилище на книгата:
-
 ```
 git clone https://github.com/dimitarminchev/DCPA.git
 ```
-
 Резултат:
-
 ```
 Cloning into 'DCPA'...
 remote: Enumerating objects: 700, done.
@@ -30,67 +29,49 @@ Resolving deltas: 100% (410/410), done.
 ```
 
 ### 3. Влезте в току що клонираното електронно хранилище на книгата: 
-
 ```
 cd DCPA
 ```
 
 ### 4. Инсталирайте необходимите модули, като изпълнете следните команди:
-
 ```
 $env:Path += ';C:\Program Files\Calibre2\'
-npm install -g gitbook-cli
 npm install -g ebook-convert 
+npm install -g gitbook-cli
 gitbook install
 ```
 
 ### 5. Възможно е да получите подобна грешка:
-
 ```
-Installing GitBook 3.2.3
 C:\Users\mitko\AppData\Roaming\npm\node_modules\gitbook-cli\node_modules\npm\node_modules\graceful-fs\polyfills.js:287
       if (cb) cb.apply(this, arguments)
-
+                 ^
 TypeError: cb.apply is not a function
     at C:\Users\mitko\AppData\Roaming\npm\node_modules\gitbook-cli\node_modules\npm\node_modules\graceful-fs\polyfills.js:287:18
-    at FSReqCallback.oncomplete (fs.js:193:5)
+    at FSReqCallback.oncomplete (node:fs:211:5)
 ```
-
-За да поправите тази грешка, отворете и редактирайте следния файл:
-
+За да поправите тази грешка:
 ```
-C:\Users\mitko\AppData\Roaming\npm\node_modules\gitbook-cli\node_modules\npm\node_modules\graceful-fs\
-```
-
-Коментирайте редовете от 62 до 64, както е показано по-долу:
-
-```
-// fs.stat = statFix(fs.stat)
-// fs.fstat = statFix(fs.fstat)
-// fs.lstat = statFix(fs.lstat)
+cd C:\Users\mitko\AppData\Roaming\npm\node_modules\gitbook-cli\node_modules\npm\
+npm i graceful-fs@4.1.4 --save
 ```
  
 ### 6. Върнете се в PowerShell командният промпт и довършете инсталацията:
-
 ```
 gitbook install
 ```
 
 ### 7. Проверете версията на GitBook с командата:
-
 ```
 gitbook --version
 ```
-
 Резултата може да изглежда по този начин:
-
 ```
 CLI version: 2.3.2
 GitBook version: 3.2.3
 ```
 
 ### 8. Стартирайте процедурата за генериране на електронната книга в избран от Вас формат:
-
 - **HTML**
 ```
 gitbook build
@@ -114,7 +95,6 @@ warn: "book" property is deprecated, use "this" directly instead
 warn: "options" property is deprecated, use config.get(key) instead
 info: >> generation finished with success in 2.2s !
 ```
-
 - **PDF**
 ```
 gitbook pdf
@@ -139,7 +119,6 @@ warn: "options" property is deprecated, use config.get(key) instead
 info: >> generation finished with success in 18.1s !
 info: >> 1 file(s) generated
 ```
-
 - **EPUB**
 ```
 gitbook epub
@@ -164,7 +143,6 @@ warn: "options" property is deprecated, use config.get(key) instead
 info: >> generation finished with success in 9.6s !
 info: >> 1 file(s) generated
 ```
-
 - **MOBI**
 ```
 gitbook mobi
@@ -189,3 +167,5 @@ warn: "options" property is deprecated, use config.get(key) instead
 info: >> generation finished with success in 8.5s !
 info: >> 1 file(s) generated
 ```
+
+## Linux
