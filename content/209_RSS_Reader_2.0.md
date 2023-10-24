@@ -156,9 +156,10 @@ namespace RSS_Reader_2._0
         // Button Click Event Handler
         private void Button_Clicked(object sender, EventArgs e)
         {
-            var link = this.EntryURL.Text;
-            var posts = new FeedReader().ReadFeed(link);
-            this.ListViewRSS.ItemsSource = new ObservableCollection<FeedItem>(posts);
+            RSS.ItemsSource = new ObservableCollection<FeedItem>
+            (
+                new FeedReader().ReadFeed(URI.Text)
+            );
         }
     }
 }
