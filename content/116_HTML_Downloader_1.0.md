@@ -14,7 +14,7 @@ HTML е основният маркиращ език за описание и д
 2. Създайте нов проект **Visual C\# &gt; Windows Universal &gt; Blank App \(Universal Windows\)**. 
 3. За име на проекта запишете: **HTML Downloader 1.0**.
 
-От менюто **Project **&gt; **Manage NuGet Packages** потърсете и инсталирайте пакета **AngleSharp**, като е показано на фигурата:
+От менюто **Project** &gt; **Manage NuGet Packages** потърсете и инсталирайте пакета **AngleSharp**, като е показано на фигурата:
 
 ![](/images/40_AngleSharp.png)
 
