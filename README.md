@@ -1,3 +1,4 @@
+# Developing Cross-Platform Apps
 Настоящият проект **Developing Cross-Platform Apps** представя Microsoft технологиите за разработка на **Универсални Windows приложения** и **Mултиплатформени мобилни приложения**.
 Учебното пособие е налично за свободно четене под формата на [електронна книга](https://dimitar-minchev.gitbook.io/developing-cross-platform-apps/). 
 Учебните ресурси са налични за свободно изтегляне от [електронно хранилище](https://github.com/dimitarminchev/DCPA/).
