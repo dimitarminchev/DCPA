@@ -172,67 +172,50 @@ info: >> 1 file(s) generated
 
 ### 1. Актуализиарайте вашата дистрибуция:
 ```
-sudo apt-get -y update
-sudo apt-get -y upgrade
+sudo apt update -y && sudo apt upgrade
 ```
 
-### 2. Инсталирайте NodeJs и Calibre:
+### 2. Инсталирайте необходимите модули:
 ```
-sudo apt-get install -y nodejs
-sudo apt-get install -y calibre
+sudo apt install -y calibre
+sudo apt install -y nodejs
+sudo apt install -y npm
+sudo npm install -g ebook-convert 
+sudo npm install -g graceful-fs@4.2.0
+sudo npm install -g gitbook-cli@2.1.2 
+gitbook install
 ```
 
-### 3. Клонирайте електронното хранилище на книгата
+### 3. Клонирайте електронното хранилище на книгата:
 ```
 git clone https://github.com/dimitarminchev/DCPA.git
-```
-
-### 4. Влезте в току що клонираното електронно хранилище на книгата: 
-```
 cd DCPA
 ```
 
-### 5. Инсталирайте необходимите модули, като изпълнете следните команди:
+### 4. Генерирайте електронните книги:
 ```
-npm install -g ebook-convert 
-npm install -g gitbook-cli
-gitbook install
-```
-
-### 6. Възможно е да получите подобна грешка:
-```
-/mnt/c/Users/mitko/AppData/Roaming/npm/node_modules/gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js:287
-      if (cb) cb.apply(this, arguments)
-                 ^
-TypeError: cb.apply is not a function
-    at /mnt/c/Users/mitko/AppData/Roaming/npm/node_modules/gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js:287:18
-    at FSReqCallback.oncomplete (fs.js:169:5)
-```
-За да поправите тази грешка:
-```
-cd /mnt/c/Users/mitko/AppData/Roaming/npm/node_modules/gitbook-cli/node_modules/npm/
-npm i graceful-fs@4.1.4 --save
-```
-
-### 7. Върнете се в командният промпт и довършете инсталацията:
-```
-gitbook install
-```
-
-### 8. Проверете версията на GitBook с командата:
-```
-gitbook --version
-```
-Резултата може да изглежда по този начин:
-```
-CLI version: 2.3.2
-GitBook version: 3.2.3
-```
-
-### 9. Стартирайте процедурата за генериране на електронната книга в избран от Вас формат:
-```
-gitbook build
 gitbook pdf
-gitbook epub
 gitbook mobi
+gitbook epub
+```
+
+Резултат от успешно изпълнение ще изглежда така:
+```
+info: 8 plugins are installed 
+info: 7 explicitly listed 
+info: loading plugin "hints"... OK 
+info: loading plugin "highlight"... OK 
+info: loading plugin "search"... OK 
+info: loading plugin "lunr"... OK 
+info: loading plugin "sharing"... OK 
+info: loading plugin "fontsettings"... OK 
+info: loading plugin "theme-default"... OK 
+info: found 36 pages 
+info: found 80 asset files 
+warn: "this.generator" property is deprecated, use "this.output.name" instead 
+warn: "navigation" property is deprecated 
+warn: "book" property is deprecated, use "this" directly instead 
+warn: "options" property is deprecated, use config.get(key) instead 
+info: >> generation finished with success in 34.8s ! 
+info: >> 1 file(s) generated 
 ```
