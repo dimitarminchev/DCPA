@@ -148,9 +148,9 @@ namespace Phone_Book_2._0
             }
         }
 
-        private async void Button_Clicked(object sender, System.EventArgs e)
+        private void Button_Clicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new AddPage());
+             Navigation.PushModalAsync(new AddPage());
         }
     }
 }
@@ -204,7 +204,7 @@ namespace Phone_Book_2._0
             InitializeComponent();
         }
 
-        private async void Button_Clicked(object sender, System.EventArgs e)
+        private void Button_Clicked(object sender, System.EventArgs e)
         {
             var contact = new Contact
             (
@@ -213,7 +213,7 @@ namespace Phone_Book_2._0
                 phone: this.Phone.Text
             );
 
-            await Navigation.PushAsync(new MainPage(contact));
+            Navigation.PushModalAsync(new MainPage(contact));
         }
     }
 }
