@@ -212,5 +212,5 @@ _Фиг. 32. Изглед от интегрираната среда за раз
 _Фиг. 33. Универсално приложение тип телефонен указател съдържащо списък с контакти_
 
 > #### Използвани изображения за потребителски профили
-> 1. Мъж: https://icons-for-free.com/iconfiles/png/512/business+costume+male+man+office+user+icon-1320196264882354682.png
-> 2. Жена: https://icons-for-free.com/iconfiles/png/512/female+person+user+woman+young+icon-1320196266256009072.png
+> 1. Мъж: [https://icons-for-free.com/iconfiles/png/512/business+costume+male+man+office+user+icon-1320196264882354682.png](https://icons-for-free.com/business+costume+male+man+office+user+icon-1320196264882354682/)
+> 2. Жена: [https://icons-for-free.com/iconfiles/png/512/female+person+user+woman+young+icon-1320196266256009072.png](https://icons-for-free.com/female+person+user+woman+young+icon-1320196266256009072/)
