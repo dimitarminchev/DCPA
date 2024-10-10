@@ -227,6 +227,6 @@ namespace Phone_Book_2._0
 
 _Фиг. 64. Демонстрация на работата на мулти-платформеното мобилно приложение за телефонен указател_
 
-> #### Използвани изображения:
-> 1. https://shorturl.at/aiN17
-> 2. https://shorturl.at/kALP3
+> ### Използвани изображения за потребителски профили
+> 1. Мъж: [https://icons-for-free.com/iconfiles/png/512/business+costume+male+man+office+user+icon-1320196264882354682.png](https://icons-for-free.com/business+costume+male+man+office+user+icon-1320196264882354682/)
+> 2. Жена: [https://icons-for-free.com/iconfiles/png/512/female+person+user+woman+young+icon-1320196266256009072.png](https://icons-for-free.com/female+person+user+woman+young+icon-1320196266256009072/)
