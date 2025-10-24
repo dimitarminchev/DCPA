@@ -2,7 +2,7 @@
 
 * [Въведение](README.md)
 
-* [Универсални Windows приложения](content/101_Intorduction.md)
+* [Глава 1. Универсални Windows приложения](content/101_Intorduction.md)
   * [История](content/102_History.md)
     * [Мобилни устройства](content/103_Mobile_Devices.md)
     * [Универсална платформа ](content/104_Universal_Windows_Platform.md)
@@ -21,7 +21,7 @@
     * [RSS Reader 1.0](content/117_RSS_Reader_1.0.md)
     * [JSON Reader 1.0](content/118_JSON_Reader_1.0.md)
 
-* [Mултиплатформени мобилни приложения](content/201_Intorduction.md)
+* [Глава 2. Mултиплатформени мобилни приложения](content/201_Intorduction.md)
   * [История](content/202_History.md)
   * [Приложения](content/203_Applications.md)
     * [Suma 2.0](content/204_Suma_2.0.md)
@@ -33,9 +33,12 @@
     * [RSS Reader 2.0](content/209_RSS_Reader_2.0.md)
     * [JSON Reader 2.0](content/210_JSON_Reader_2.0.md)
 
-* [Заключение](content/301_Summary.md)
-  * [Бележка](content/302_Note.md)
-  * [Книга](content/303_Book.md)
-  * [Автор](content/304_Author.md)
-  * [Лиценз](content/305_License.md)
-  * [Формат](content/306_Format.md)
+* [Глава 3. Потребителски интерфейс на мултиплатформени приложения](content/301_Intorduction.md)
+  * [История](content/302_History.md)
+
+* [Заключение](content/401_Summary.md)
+  * [Бележка](content/402_Note.md)
+  * [Книга](content/403_Book.md)
+  * [Автор](content/404_Author.md)
+  * [Лиценз](content/405_License.md)
+  * [Формат](content/406_Format.md)
