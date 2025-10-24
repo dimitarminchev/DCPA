@@ -1,6 +1,6 @@
 # Phone Book 1.0
 
-Използвайки интегрираната среда за разработка Visual Studio и езика за програмиране C\# ще разработим универсално приложение тип телефонен указател съдържащо списък с контакти. Изходния код от дизайна на потребителския интерфейс \(XAML\) и бизнес логиката \(C\#\) на приложението са дадени в програмните фрагменти по-долу:
+Using the integrated development environment Visual Studio and the C\# programming language, we will develop a universal phonebook-type application containing a list of contacts. The source code from the user interface design \(XAML\) and the business logic \(C\#\) of the application is provided in the code snippets below:
 
 ## Contact.cs
 
@@ -199,18 +199,18 @@ namespace Phone_Book_1._0
 
 ## Demo
 
-Изглед в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
+View in the integrated development environment Visual Studio during application development:
 
 ![](/images/32_Phone_Book_1.0_Develop.png)
 
-_Фиг. 32. Изглед от интегрираната среда за разработка по време на създаване на приложението_
+_Fig. 32. View from the integrated development environment during application creation_
 
-Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.
+Run the application from the menu: **Debug > Start Debugging** or by pressing the **F5** key.
 
 ![](/images/33_Phone_Book_1.0_Run.png)
 
-_Фиг. 33. Универсално приложение тип телефонен указател съдържащо списък с контакти_
+_Fig. 33. Universal phonebook application containing a list of contacts_> 
 
-> #### Използвани изображения за потребителски профили
-> 1. Мъж: [https://icons-for-free.com/iconfiles/png/512/business+costume+male+man+office+user+icon-1320196264882354682.png](https://icons-for-free.com/business+costume+male+man+office+user+icon-1320196264882354682/)
-> 2. Жена: [https://icons-for-free.com/iconfiles/png/512/female+person+user+woman+young+icon-1320196266256009072.png](https://icons-for-free.com/female+person+user+woman+young+icon-1320196266256009072/)
+> #### Images used for user profiles
+> 1. Man: [https://icons-for-free.com/iconfiles/png/512/business+costume+male+man+office+user+icon-1320196264882354682.png](https://icons-for-free.com/business+costume+male+man+office+user+icon-1320196264882354682/)
+> 2. Woman: [https://icons-for-free.com/iconfiles/png/512/female+person+user+woman+young+icon-1320196266256009072.png](https://icons-for-free.com/female+person+user+woman+young+icon-1320196266256009072/)

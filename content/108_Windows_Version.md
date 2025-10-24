@@ -1,26 +1,26 @@
-# Как да проверим коя е версията на операционната система?
+# How to check which version of the operating system you have?
 
-За да проверите текущата версия на операционната система Windows използвайте клавишна комбинация Windows Key + R \(Фиг. 18\). В появилия се диалогов прозорец RUN запишете команда WINVER \(Фиг. 19\) и натиснете Enter. В резултат ще видите екран About Windows \(Фиг. 20\) в който се вижда текущата версията на операционната система.
+To check the current version of the Windows operating system, use the keyboard shortcut Windows Key + R \(Fig. 18\). In the dialog box that appears, RUN, type the command WINVER \(Fig. 19\) and press Enter. As a result, you will see the About Windows screen \(Fig. 20\) where the current version of the operating system is displayed.
 
 ![](/images/18_Windows__key_plus_R.png)
 
-_Фиг.18. Клавишна комбинация Windows Key + R_
+_Fig.18. Keyboard shortcut Windows Key + R_
 
 ![](/images/19_Run.png)
 
-_Фиг.19. Диалогов прозорец RUN_
+_Fig.19. RUN dialog box_
 
 ![](/images/20_WinVer.png)
 
-_Фиг.20. Версия на операционната система Windows_
+_Fig.20. Windows operating system version_
 
 {% hint style='info' %}
-#### Бележка
-Ако искате да смените името и/или организацията стартирайте **Registry Editor**
+#### Note
+If you want to change the name and/or organization, start the **Registry Editor**
 ```
 Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion
 ```
-Променете стойностите на полетата:
+Modify the values of the fields:
 - RegisteredOwner
 - RegisteredOrganization  
 {% endhint %}

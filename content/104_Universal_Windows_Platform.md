@@ -1,18 +1,18 @@
-# Универсална платформа
+# Universal Windows Platform
 
-На 13 септември 2011 по време на конференцията Build, бе представен магазина за приложения Windows Store, предназначен за разпространение на приложения за компютри с инсталирана операционната система Windows 8.
+On September 13, 2011, during the Build conference, the Windows Store application store was presented, intended for distributing applications for computers with the Windows 8 operating system installed.
 
 ![](/images/09_Convergence_Journey.png)
 
-_Фиг. 9. История на развитието на магазина за приложения на Microsoft_
+_Fig. 9. History of the Development of the Microsoft App Store_
 
-При представянето на платформата Windows Phone през 2012, Windows Phone Marketplace, бе преименуван на Windows Phone Store, като този магазин осигурява разпространението на приложения за мобилни устройства Windows Phone.
+When the Windows Phone platform was introduced in 2012, Windows Phone Marketplace was renamed Windows Phone Store, providing the distribution of applications for Windows Phone mobile devices.
 
-С излизането на Windows 10, магазините за приложения Windows Phone Store и Windows Store, баха обединени. Операционната система премина към единна архитектура наречена Windows Universal Platform. Днес магазина за приложения на компанията се нарича Microsoft Store.
+With the release of Windows 10, the Windows Phone Store and Windows Store were merged. The operating system switched to a unified architecture called Windows Universal Platform. Today, the company's app store is called Microsoft Store.
 
 ![](/images/10_Universal_Windows_Platform.png)
 
-_Фиг.10. Архитектура на универсалната Windows платформа за приложения_
+_Fig.10. Architecture of the Universal Windows Platform for Applications_
 
-Настоящото пособие въвежда читателя във вълнуващия свят на Microsoft технологиите за разработка на универсални приложения за платформа Windows.
+This guide introduces the reader to the exciting world of Microsoft technologies for developing universal applications for the Windows platform.
 

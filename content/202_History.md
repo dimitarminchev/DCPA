@@ -1,20 +1,13 @@
-# История
+# History
 
-Основана Май 2011 година компанията Xamarin предоставя на програмистите единна платформа за разработка на мултиплатформени мобилни приложения. Екипа инженери автори на Mono, Mono for Android и Mono Touch обединиха своите усилия създавайки уникален продукт, който използвайки Microsoft технологиите C\# и .NET, позволява разработване на Android, iOS и Windows приложения.
+Founded in May 2011, Xamarin provides programmers with a unified platform for developing cross-platform mobile applications. The team of engineers behind Mono, Mono for Android, and MonoTouch joined their efforts to create a unique product that, using Microsoft technologies C# and .NET, allows the development of Android, iOS, and Windows applications.
 
 ![](/images/50_Xamarin_Cross_Platform.png)
 
-_Фиг.50. Mултиплатформени мобилни приложения_
+_Fig.50. Multiplatform mobile applications_
 
-През Февруари 2016 Microsoft обяви закупуването на компанията Xamarin. Технологичния гигант от Редмънд добави технологията към интегрираната среда за разработка Visual Studio. По данни от Април 2017 над 1.4 милиона разработчици от 120 страни използват Xamarin.
+In February 2016, Microsoft announced the acquisition of the company Xamarin. The technology giant from Redmond added the technology to the integrated development environment Visual Studio. According to data from April 2017, over 1.4 million developers from 120 countries use Xamarin.
 
 ![](/images/51_Xamarin_Code_Share_Architecture.png)
 
-_Фиг. 51 Платформено зависим и споделен изходен код_
-
-## .NET MAUI
-Xamarin.Forms еволюира в .NET MAUI през ноември 2021 когато Microsoft пуска .NET 6. 
-
-MAUI е съкращение от Multi-Platform App User Interface, което означава буквално "потребителски интерфейс на мулти-платформено приложение".
-
-За повече информация за .NET MAUI вижте: [.NET Multi-Platform App User Interface Documentation](https://docs.microsoft.com/en-us/dotnet/maui/).
+_Fig. 51 Platform-dependent and shared source code_

@@ -1,36 +1,36 @@
-# Приложения
+# Applications
 
-В тази част са представени редица приложения демонстриращи разработка на мулти-платформени мобилни приложения.
+This section presents several applications demonstrating the development of multi-platform mobile applications.
 
-Разработката на всяко приложение в интегрираната среда за разработка Visual Studio, започва със създаване на проект. Нов проект се създава от менюто посредством изпълняване на последователността: **File &gt; New &gt; Project**. Може да се използва и съкратената клавишна комбинация **Ctrl + Shift + N** за създаване на нов проект.
+The development of each application in the integrated development environment Visual Studio begins with creating a project. A new project is created from the menu by executing the sequence: **File &gt; New &gt; Project**. The shortcut key combination **Ctrl + Shift + N** can also be used to create a new project.
 
 ![](/images/52_Create_Mobile_App.png)
 
-_Фиг.52 Създаване на нов мулти-плалтформен проект_
+_Fig.52 Creating a new multi-platform project_
 
 ![](/images/53_New_Mobile_App.png)
 
-_Фиг.53 Конфигуриране на новия мулти-платформен проект_
+_Fig.53 Configuring the new multi-platform project_
 
-## Настройки
+## Settings
 
-Меню **Tools &gt; Android &gt; Android Device Manager** добавете ново емулаторно устройсто за тестване на разработваните приложения:
+From the menu **Tools &gt; Android &gt; Android Device Manager**, add a new emulator device for testing the developed applications:
 
 ![](/images/54_Add_Android_Device.png)
 
-_Фиг.54 Добавяне на ново емулаторно устройсто за тестване на разработваните приложения._
+_Fig.54 Adding a new emulator device for testing the applications being developed._
 
 ![](/images/55_Android_Device_Ready.png)
 
-_Фиг.55 Успешно е добавено ново емулаторно устройсто за тестване на разработваните приложения._
+_Fig.55 A new emulator device has been successfully added for testing the applications being developed._
 
-Тествайте емулатора на операционната система Android натискайки бутона **Start**. Ако всичко е наред ще видите операционната система Android 11 (API 30), както е показано на фигурата по-долу:
+Test the Android operating system emulator by pressing the **Start** button. If everything is correct, you will see the Android 11 (API 30) operating system, as shown in the figure below:
 
 ![](/images/56_Android_11.png)
 
-_Фиг. 56. Android 11 (API 30)_
+_Fig. 56. Android 11 (API 30)_
 
 {% hint style='tip' %}
-#### Съвет
-Можете да ускорите Android емулатора под Microsoft Windows като използвате [HAXM](https://developer.android.com/studio/run/emulator-acceleration#vm-windows-haxm-intel) (_Intel_) или [WHPX](https://developer.android.com/studio/run/emulator-acceleration#vm-windows-whpx) (_AMD_) в зависимост от наличния ценрален процесор в компютъра Ви.
+#### Tip
+You can speed up the Android emulator on Microsoft Windows by using [HAXM](https://developer.android.com/studio/run/emulator-acceleration#vm-windows-haxm-intel) (_Intel_) or [WHPX](https://developer.android.com/studio/run/emulator-acceleration#vm-windows-whpx) (_AMD_) depending on the central processor available in your computer.
 {% endhint %}

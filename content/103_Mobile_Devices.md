@@ -1,22 +1,22 @@
-# Мобилни устройства
+# Mobile devices
 
-Windows Phone е операционна система за мобилни устройства \(смартфони\), разработена от Microsoft, наследяваща платформата Windows Mobile. Windows Phone предлага една изцяло нова визия и функционалност, в крак с модерния начин на живот и постоянната свързаност към Интернет, която е добре комбинирана с мощен хардуер, осигуряващ оптимален комфорт при ползване с разнообразна мултимедия.
+Windows Phone is an operating system for mobile devices \(smartphones\) developed by Microsoft, inheriting the Windows Mobile platform. Windows Phone offers a completely new vision and functionality, in line with modern lifestyles and constant Internet connectivity, which is well combined with powerful hardware, providing optimal comfort when using a variety of multimedia.
 
 ![](/images/06_Windows_Phone_7.png)
 
-_Фиг.6. Windows Phone 7 излиза през 2010_
+_Fig.6. Windows Phone 7 is released in 2010_
 
-Първият Windows Phone 7 е представен на 21 октомври 2010, локализиран e на 25 езика, достъпен в 35 страни, а приложенията за него се публикуват в Windows Phone Store. Базиран е на Windows Embedded Compact 7 версията на Windows Embedded CE. Подръжката се преустановява на 14 октомври 2014.
+The first Windows Phone 7 was introduced on October 21, 2010, localized in 25 languages, available in 35 countries, and its apps are published in the Windows Phone Store. It is based on the Windows Embedded Compact 7 version of Windows Embedded CE. Support was discontinued on October 14, 2014.
 
 ![](/images/07_Windows_Phone_8.png)
 
-_Фиг. 7. Windows Phone 8 излиза през 2012_
+_Fig. 7. Windows Phone 8 is released in 2012_
 
-Втората генерация мобилно устройство Windows Phone 8 излиза на 29 октомври 2012, а Windows Phone 8.1 на 2 април 2014. Windows CE се заменя от Windows NT кернела от Windows 8. Приложенията за него се публикуват в Windows Phone Store. Поддръжката на Windows Phone 8 се преустановява на 12 Януари 2016, а на Windows Phone 8.1 на 11 Юли 2017 .
+The second generation of the Windows Phone 8 mobile device was released on October 29, 2012, and Windows Phone 8.1 on April 2, 2014. Windows CE is replaced by the Windows NT kernel from Windows 8. Applications for it are published in the Windows Phone Store. Support for Windows Phone 8 ended on January 12, 2016, and for Windows Phone 8.1 on July 11, 2017.
 
 ![](/images/08_Windows_Phone_10.png)
 
-_Фиг. 8. Windows 10 Mobile излиза през 2015_
+_Fig. 8. Windows 10 Mobile is released in 2015_
 
-На 20 ноември 2015 е представена операционната система Windows 10 Mobile. Поддържа се архитектурата Universal Windows Platform. Приложeнията се публикуват и изтеглят от Windows Store. Подръжката се преустановява на 11 Юни 2019.
+On November 20, 2015, the Windows 10 Mobile operating system was presented. The Universal Windows Platform architecture is supported. Applications are published and downloaded from the Windows Store. Support was discontinued on June 11, 2019.
 

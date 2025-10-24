@@ -1,6 +1,6 @@
 # Developing Cross-Platform Apps
-This project **Developing Cross-Platform Apps** presents Microsoft technologies for developing **Universal Windows applications** and **Cross-platform mobile applications**.
-The tutorial is available for free reading in the form of an [e-book](https://dimitar-minchev.gitbook.io/developing-cross-platform-apps/).
+This project **Developing Cross-Platform Apps** presents Microsoft technologies for developing **Universal Windows applications** (UWP), **Cross-platform mobile applications** (Xamarin.Forms) and **Multi-Platform App User Interface** (MAUI).
+The tutorial is available for free reading in the form of an [electronic book](https://dimitar-minchev.gitbook.io/developing-cross-platform-apps/).
 The educational resources are available for free download from the [electronic repository](https://github.com/dimitarminchev/DCPA/).
 All materials are distributed under the [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
@@ -12,12 +12,12 @@ All materials are distributed under the [CC-BY-NC-SA](https://creativecommons.or
 
 ## Author
 
-**Dimitar Minchev** is a university lecturer at the Center for Informatics and Technical Sciences at Burgas Free University.
+**Dimitar Minchev** is a university lecturer at the Faculty of Informatics and Technical Sciences at Burgas Free University.
 He prepares students for the [Republican Student Programming Olympiad](http://www.bcpc.eu/) in the [Competitive Programming Club](https://dev.bfu.bg/).
 He organizes a competition for the development of desktop and mobile applications [HACKATHON @ BFU](https://dev.bfu.bg/hackathon/).
 He created the unique [Programming Talent Academy](http://atp.bfu.bg/) and [Robotics School](http://robots.bfu.bg/) for students from Burgas.
 He initiated the student programming competition [CODE@BURGAS](https://spoj.bfu.bg/).
-Participates in the national program [Training for IT Skills and Career](https://github.com/dimitarminchev/ITCareer) of the Ministry of Education and Science.
+Participates in the national program [IT Skills and Career](https://github.com/dimitarminchev/ITCareer) of the Ministry of Education and Science.
 
 | Contact |
 | :--- |

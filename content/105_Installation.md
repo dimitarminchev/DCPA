@@ -1,30 +1,30 @@
-# Инсталация
+# Intallation
 
-Напълно безплатна версия на интегрираната среда за разработка наречена **Microsoft Visual Studio Community Edition**, може да се изтегли от официалният сайт на компанията в Интернет на адрес: [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/). Понастоящем последната актуална версия на този продукт е Microsoft Visual Studio Community Edition 2022.
+A completely free version of the integrated development environment called **Microsoft Visual Studio Community Edition** can be downloaded from the company's official website on the Internet at: [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/). Currently, the latest available version of this product is Microsoft Visual Studio Community Edition 2022.
 
 ![](/images/11_Visual_Studio_Website.png)
 
-_Фиг. 11.  Microsoft Visual Studio Website_
+_Fig. 11.  Microsoft Visual Studio Website_
 
-Стандартна инсталация по подразбиране изисква скромните **1.39** GB свободно дисково пространство, но тя включва само редактора на интегрираната среда за разработка Visual Studio, както и инструменти за колаборативна работа.
+A standard default installation requires a modest **1.39** GB of free disk space, but it includes only the Visual Studio integrated development environment editor, as well as tools for collaborative work.
 
-За разработка на универсални Windows приложения е необходимо да се включи опцията **Universal Windows Platform development** \(Фиг. 12\) и за разработка на мултиплатформени-мобилни приложения опцията **Mobile development with .NET** \(Фиг. 13\).
+For developing Universal Windows applications, it is necessary to select the **Universal Windows Platform development** option \(Fig. 12\), and for developing cross-platform mobile applications, the **Mobile development with .NET** option \(Fig. 13\).
 
 ![](/images/12_Universal_Windows_Platform_development.png)
 
-_Фиг. 12. Visual Studio Installer: Universal Windows Platform development_
+_Fig. 12. Visual Studio Installer: Universal Windows Platform development_
 
 ![](/images/13_Mobile_development_with_.NET.png)
 
-_Фиг. 13. Visual Studio Installer: Mobile development with .NET_
+_Fig. 13. Visual Studio Installer: Mobile development with .NET_
 
-Допълнителните инструменти за разработчици увеличават обема на необходимото дисково пространство за инсталиране на интегрираната среда за разработка Visual Studio. Необходими са **20.87** GB свободно дисково пространство \(Фиг. 14\).
+The additional developer tools increase the amount of disk space required to install the Visual Studio integrated development environment. **20.87** GB of free disk space is required \(Fig. 14\).
 
 ![](/images/14_Visual_Studio_Setup.png)
 
 _Фиг. 14. Visual Studio Setup_
 
-Продължава се напред и се изчаква приключването на инсталацията. Процедурата отнема значително количество време.
+Proceed forward and wait for the installation to complete. The procedure takes a considerable amount of time.
 
 ![](/images/15_Visual_Studio_Installer.png)
 

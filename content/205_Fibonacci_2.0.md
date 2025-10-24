@@ -1,21 +1,21 @@
 # Fibonacci 2.0
 
-Използвайки интегрираната среда за разработка Visual Studio и езика за програмиране C\# ще разработим мулти-платформено мобилно приложение за генериране на числата от редицата на Фибоначи.
+Using the integrated development environment Visual Studio and the Cю# programming language, we will develop a cross-platform mobile application for generating numbers from the Fibonacci sequence.
 
 {% hint style='info' %}
-#### Информация
-Числата на Фибоначи в математиката образуват редица, която се дефинира рекурсивно по следния начин: започва се с 0 и 1, а всеки следващ член на редицата се получава като сума на предходните два. Първите числа на Фибоначи са: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, …
-- Източник: [Wikipedia](https://en.wikipedia.org/wiki/Fibonacci_number)
+#### Information
+In mathematics, Fibonacci numbers form a sequence that is defined recursively as follows: it starts with 0 and 1, and each subsequent number in the sequence is obtained as the sum of the previous two. The first Fibonacci numbers are: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, …
+- Source: [Wikipedia](https://en.wikipedia.org/wiki/Fibonacci_number)
 {% endhint %}
 
 ## Start
-1. Стартирайте интегрираната среда за разработка **Visual Studio**. 
-2. Създайте нов проект: **Visual C\# &gt; Cross-Platform &gt; Mobile App \(Xamarin.Forms\)**. 
-3. За име на проекта запишете: **Fibonacci 2.0**.
+1. Launch the integrated development environment **Visual Studio**.
+2. Create a new project: **Visual C\# &gt; Cross-Platform &gt; Mobile App \(Xamarin.Forms\)**.
+3. Name the project: **Fibonacci 2.0**.
 
 ## MainPage.xaml
 
-Файлът **MainPage.xaml** съдържа изходния код от дизайна на потребителския интерфейс на разработваното приложение и се пише на езика XAML. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение
+The file **MainPage.xaml** contains the source code for the user interface design of the application being developed and is written in the XAML language. Copy \(Ctrl+C\) and paste \(Ctrl+V\) the code snippet given below into your application.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -43,7 +43,7 @@
 
 ## MainPage.xaml.cs
 
-Файлът **MainPage.xaml.cs** съдържа изходния код от бизнес логиката на разработваното приложение и се пише на програмният език C\#. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение.
+The file **MainPage.xaml.cs** contains the source code of the business logic of the developed application and is written in the C\# programming language. Copy \(Ctrl+C\) and paste \(Ctrl+V\) the code snippet given below into your application.
 
 ```csharp
 using System;
@@ -86,9 +86,8 @@ namespace Fibonacci_2._0
 
 ## Demo
 
-Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5.**
+Start the application from the menu: **Debug &gt; Start Debugging** or by pressing the **F5** key.
 
 ![](/images/58_Fibonacci_2.0.png)
 
-_Фиг.58 Тестване на мултиплатформено мобилно приложение за генериране на редицата от числата на Фибоначи - Android Emulator 11 \(API 30\)_
-
+_Fig.58 Testing a cross-platform mobile application for generating the Fibonacci sequence - Android Emulator 11 (API 30)_

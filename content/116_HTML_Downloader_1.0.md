@@ -1,26 +1,26 @@
 # HTML Downloader 1.0
 
-Използвайки интегрираната среда за разработка Visual Studio и езика за програмиране C\# ще разработим универсално приложение за изтегляне HTML съдържанието на кода от Интернет страница.
+Using the integrated development environment Visual Studio and the C\# programming language, we will develop a universal application to download the HTML content of code from a web page. 
 
 {% hint style='info' %}
-#### Информация
-HTML е основният маркиращ език за описание и дизайн на уеб страници. HTML е стандарт в Интернет, а правилата се определят от международния консорциум W3C.
-- Източник: [Wikipedia](https://en.wikipedia.org/wiki/HTML)
+#### Information 
+HTML is the main markup language for describing and designing web pages. HTML is a standard on the Internet, and the rules are defined by the international consortium W3C. 
+- Source: [Wikipedia](https://en.wikipedia.org/wiki/HTML)
 {% endhint %}
 
-## Start
+## Start 
 
-1. Стартирайте интегрираната среда за разработка **Visual Studio**. 
-2. Създайте нов проект **Visual C\# &gt; Windows Universal &gt; Blank App \(Universal Windows\)**. 
-3. За име на проекта запишете: **HTML Downloader 1.0**.
+1. Launch the integrated development environment **Visual Studio**. 
+2. Create a new project **Visual C\# &gt; Windows Universal &gt; Blank App \(Universal Windows\)**. 
+3. For the project name, enter: **HTML Downloader 1.0**. 
 
-От менюто **Project** &gt; **Manage NuGet Packages** потърсете и инсталирайте пакета **AngleSharp**, като е показано на фигурата:
+From the **Project** &gt; **Manage NuGet Packages**, search for and install the **AngleSharp** package, as shown in the figure: 
 
 ![](/images/40_AngleSharp.png)
 
-_Фиг. 40. Инсталация на допълнителен пакет към проекта_
+_Fig. 40. Installation of an additional package for the project_
 
-Допълнителни пакети към проект можете да инсталитрате и алтернативно от менюто: **Tools &gt; NuGet Package Manager &gt; Package Manager Console**, като изпълните следната команда в конзолата:
+You can also install additional packages for a project alternatively from the menu: **Tools &gt; NuGet Package Manager &gt; Package Manager Console**, by executing the following command in the console:
 
 ```
 PM> Install-Package AngleSharp -Version 0.16.1
@@ -28,7 +28,7 @@ PM> Install-Package AngleSharp -Version 0.16.1
 
 ## MainPage.xaml
 
-Файлът **MainPage.xaml** съдържа изходния код от дизайна на потребителския интерфейс на разработваното приложение и се пише на езика XAML. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение.
+The **MainPage.xaml** file contains the source code for the user interface design of the application being developed and is written in XAML. Copy \(Ctrl+C\) and paste \(Ctrl+V\) the code snippet provided below into your application.
 
 ```xml
 <Page
@@ -60,15 +60,15 @@ PM> Install-Package AngleSharp -Version 0.16.1
 
 ```
 
-Изглед от дизайна на потребителският интерфейс \(XAML\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
+View of the user interface design \(XAML\) in the integrated development environment Visual Studio during the development of the application:
 
 ![](/images/41_HTML_Downloader_1.0_UI.png)
 
-_Фиг. 41. Изглед от дизайна на потребителският интерфейс_
+_Fig. 41. View of the user interface design_
 
 ## MainPage.xaml.cs
 
-Файлът **MainPage.xaml.cs** съдържа изходния код от бизнес логиката на разработваното приложение и се пише на програмният език C\#. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение.
+The **MainPage.xaml.cs** file contains the source code for the business logic of the developed application and is written in the C# programming language. Copy \(Ctrl+C\) and paste \(Ctrl+V\) the code snippet provided below into your application.
 
 ```csharp
 using System;
@@ -112,14 +112,14 @@ namespace HTML_Downloader_1._0
 
 ## Demo
 
-Изглед от бизнес логиката \(C\#\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
+A view of the business logic \(C\#\) in the integrated development environment Visual Studio during the application development:
 
 ![](/images/42_HTML_Downloader_1.0_BL.png)
 
-_Фиг. 42. Изглед от бизнес логиката на разработваното приложение_
+_Fig. 42. View of the business logic of the application under development_
 
-Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.
+Run the application from the menu: **Debug &gt; Start Debugging** or by pressing the **F5** key.
 
 ![](/images/43_HTML_Downloader_1.0_Run.png)
 
-_Фиг.43 Универслано приложение за изтегляне HTML съдържанието на кода от Интернет страница_
+_Fig. 43. Universal application for downloading HTML content from a web page_

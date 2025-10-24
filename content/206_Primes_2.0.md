@@ -1,22 +1,23 @@
 # Primes 2.0
 
-Използвайки интегрираната среда за разработка Visual Studio и езика за програмиране C\# ще разработим мулти-платформено мобилно приложение за генериране на редица от прости числа.
+Using the integrated development environment Visual Studio and the C\# programming language, we will develop a cross-platform mobile application to generate a sequence of prime numbers.
 
 {% hint style='info' %}
-#### Информация
-Просто число е естествено число, по-голямо от 1, което не е произведение на две по-малки естествени числа.
-- Източник: [Wikipedia](https://en.wikipedia.org/wiki/Prime_number)
+#### Information
+A prime number is a natural number greater than 1 that is not the product of two smaller natural numbers.
+- Source: [Wikipedia](https://en.wikipedia.org/wiki/Prime_number)
 {% endhint %}
 
 ## Start
-
-1. Стартирайте интегрираната среда за разработка **Visual Studio**. 
-2. Създайте нов проект: **Visual C\# &gt; Cross-Platform &gt; Mobile App \(Xamarin.Forms\)**. 
-3. За име на проекта запишете: **Primes 2.0**.
+1. Launch the integrated development environment **Visual Studio**.
+2. Create a new project: **Visual C\# &gt; Cross-Platform &gt; Mobile App \(Xamarin.Forms\)**. 
+3. For the project name, enter: **Primes 2.0**.
 
 ## MainPage.xaml
 
-Файлът **MainPage.xaml** съдържа изходния код от дизайна на потребителския интерфейс на разработваното приложение и се пише на езика XAML. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение
+The file **MainPage.xaml** contains the source code for the design of the user interface of the application being developed and is written in the XAML language. Copy \(Ctrl+C\) and paste \(Ctrl+V\) the program snippet given below into your application. 
+
+Използвайки интегрираната среда за разработка Visual Studio и езика за програмиране C\# ще разработим мулти-платформено мобилно приложение за генериране на редица от прости числа.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -44,7 +45,7 @@
 
 ## MainPage.xaml.cs
 
-Файлът **MainPage.xaml.cs** съдържа изходния код от бизнес логиката на разработваното приложение и се пише на програмният език C\#. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение.
+The file **MainPage.xaml.cs** contains the source code of the business logic of the developed application and is written in the programming language C\#. Copy \(Ctrl+C\) and paste \(Ctrl+V\) the code snippet given below into your application.
 
 ```csharp
 using System;
@@ -83,9 +84,8 @@ namespace Primes_2._0
 
 ## Demo
 
-Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.
+Start the application from the menu: **Debug &gt; Start Debugging** or by pressing the **F5** key.
 
 ![](/images/59_Primes_2.0.png)
 
-_Фиг.59 Тестване на мултиплатформено мобилно приложение за генериране на редица от прости числа - Android Emulator 11 \(API 30\)_
-
+_Fig.59 Testing a cross-platform mobile application for generating a sequence of prime numbers - Android Emulator 11 (API 30)_

@@ -1,48 +1,48 @@
-# История
+# History
 
-Компанията Microsoft е транснационална компания, развиваща дейност в областта на компютърните технологии и разработката на софтуер. Седалището ѝ е разположено в гр. Редмънд, Съединени американски щати. Основана е от Бил Гейтс и Пол Алън през 1975 година.
+Microsoft is a multinational company engaged in computer technology and software development. Its headquarters are located in Redmond, United States. It was founded by Bill Gates and Paul Allen in 1975.
 
 ![](/images/01_Bill_Gates_and_Paul_Allan.png)
 
-_Фиг. 1. Пол Алън \(отляво\) и Бил Гейтс \(отдясно\) основават Microsoft през 1975_
+_Fig. 1.Paul Allen (left) and Bill Gates (right) founding Microsoft in 1975_
 
-Първата версия на операционна система MS-DOS излиза през Август 1981, а графичния интерфейс Windows 1.0 на 20 ноември 1985. Първата версия на популярния пакет от приложения за офиса Microsoft Office излиза на 19 Ноември 1990 г.
+The first version of the MS-DOS operating system was released in August 1981, and the Windows 1.0 graphical interface on November 20, 1985. The first version of the popular Microsoft Office suite of applications was released on November 19, 1990.
 
 ![](/images/02_Microsoft_Windows_1.0.png)
 
-_Фиг. 2. Microsoft Windows 1.0 излиза през 1983_
+_Fig. 2. Microsoft Windows 1.0 released in 1983_
 
 ![](/images/03_Microsoft_Word_1.0.png)
 
-_Фиг. 3. Microsoft Word 1.0 излиза през 1989_
+_Fig. 3. Microsoft Windows 1.0 released in 1983_
 
-Операционните системи Windows 8 и 8.1 са представени съответно на 1 Август 2012 и 27 Август 2013. Подръжката за Windows 8 и 8.1 се преустановява съответно на 12 Януари 2016 и 10 Януари 2023. Последната версия на най-използваната компютърна операционната система Windows 10 излиза на 15 Юли 2015.
+The Windows 8 and 8.1 operating systems were released on August 1, 2012, and August 27, 2013, respectively. Support for Windows 8 and 8.1 ended on January 12, 2016, and January 10, 2023, respectively. The latest version of the most widely used computer operating system, Windows 10, was released on July 15, 2015.
 
 ![](/images/04_Microsoft_Windows_8.1.png)
 
-_Фиг. 4. Windows 8.1 излиза през 2013_
+_Fig. 4. Windows 8.1 released in 2013_
 
 ![](/images/05_Microsoft_Windows_10.png)
 
-_Фиг. 5. Windows 10 излиза през 2015_
+_Fig. 5. Windows 10 released in 2015_
 
-По официални данни обявени от компанията Microsoft, инсталациите на Windows 10 и 11 за периода от 2015 до 2025 са показани в Табл. 1.
+According to official data released by Microsoft, Windows 10 and 11 installations for the period from 2015 to 2025 are shown in Table 1.
 
-| **Месец и година** | **Брой устройства** |
+| **Month and Year** | **Number of Devices** |
 | :--- | :--- |
-| Юли 2015 | Старт на Windows 10 |
-| Септември 2016 | 400 милиона (Windows 10) |
-| Март 2017 | 500 милиона (Windows 10) |
-| Септември 2018 | 700 милиона (Windows 10) |
-| Март 2020 | 1 милиард (Windows 10) |
-| Октомври 2021 | Старт на Windows 11 |
-| Октомври 2023 | 400 милиона (Windows 11) |
-| Април 2022 | 1.4 милиарда (общо Windows 10 и 11) |
-| Юли 2025 | Windows 11 – 52% пазарен дял, Windows 10 – 44.59% |
+| July 2015 | Launch of Windows 10 |
+| September 2016 | 400 million (Windows 10) |
+| March 2017 | 500 million (Windows 10) |
+| September 2018 | 700 million (Windows 10) |
+| March 2020 | 1 billion (Windows 10) |
+| October 2021 | Launch of Windows 11 |
+| October 2023 | 400 million (Windows 11) |
+| April 2022 | 1.4 billion (total Windows 10 and 11) |
+| July 2025 | Windows 11 – 52% market share, Windows 10 – 44.59% |
 
-_Табл. 1 Инсталации на операционните системи Windows 10 и 11_
+_Tabl. 1 Windows 10 and 11 operating system installations_
 
-По официални данни обявени от компанията Microsoft, публичните версии на операционната система Windows 10 са показани в Табл. 2
+According to official data announced by Microsoft, the public versions of the Windows 10 operating system are shown in Table 2.
 
 | **Version** | **Build** | **Release** |
 | :--- | :--- | :--- |
@@ -61,12 +61,12 @@ _Табл. 1 Инсталации на операционните системи
 | 21H2 | 19044 | November 2021 |
 | 22H2 | 19045 | October 2022 |
 
-_Табл. 2 Публични версии на операционната система Windows 10_
+_Tabl. 2 Public versions of the Windows 10 operating system_
 
-Повече информация за версиите на операционната система Windows 10, може да бъде намерена в Интернет на адрес: 
+More information about the versions of the Windows 10 operating system can be found on the Internet at:
 [https://docs.microsoft.com/en-us/windows/release-health/release-information/](https://docs.microsoft.com/en-us/windows/release-health/release-information/)
 
-По официални данни обявени от компанията Microsoft, публичните версии на операционната система Windows 11 са показани в Табл. 3
+According to official data announced by Microsoft, the public versions of the Windows 11 operating system are shown in Table 3.
 
 | **Version** | **Build** | **Release** |
 | :--- | :--- | :--- |
@@ -76,7 +76,7 @@ _Табл. 2 Публични версии на операционната си�
 | 24H2 | 26100 | October 2024 |
 | 25H2 | 26200 | September 2025 |
 
-_Табл. 3 Публични версии на операционната система Windows 11_
+_Table 3 Public versions of the Windows 11 operating system_
 
-Повече информация за версиите на операционната система Windows 11, може да бъде намерена в Интернет на адрес: 
+More information about the versions of the Windows 11 operating system can be found on the Internet at:
 [https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information](https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information)

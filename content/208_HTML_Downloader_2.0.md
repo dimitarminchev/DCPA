@@ -1,20 +1,20 @@
 # HTML Downloader 2.0
 
-Използвайки интегрираната среда за разработка Visual Studio и езика за програмиране C\# ще разработим мулти-платформено мобилно приложение за изтегляне HTML съдържанието на кода от Интернет страница.
+Using the integrated development environment Visual Studio and the C\# programming language, we will develop a cross-platform mobile application to download the HTML content of code from a web page.
 
 {% hint style='info' %}
-#### Информация
-HTML е основният маркиращ език за описание и дизайн на уеб страници. HTML е стандарт в Интернет, а правилата се определят от международния консорциум W3C.
-- Източник: [Wikipedia](https://en.wikipedia.org/wiki/HTML)
+#### Information
+HTML is the primary markup language for describing and designing web pages. HTML is a standard on the Internet, and its rules are defined by the international consortium W3C.
+- Source: [Wikipedia](https://en.wikipedia.org/wiki/HTML)
 {% endhint %}
 
-## Start 
 
-1. Стартирайте интегрираната среда за разработка **Visual Studio**.
-2. Създайте нов проект: **Visual C\# &gt; Cross-Platform &gt; Mobile App \(Xamarin.Forms\)**.
-3. За име на проекта запишете: **HTML Downloader 2.0**.
+## Start
+1. Launch the integrated development environment **Visual Studio**.
+2. Create a new project: **Visual C\# &gt; Cross-Platform &gt; Mobile App \(Xamarin.Forms\)**.
+3. Name the project: **HTML Downloader 2.0**.
 
-Инсталирайте допълнителен пакет към приложението от менюто: **Tools &gt; NuGet Package Manager &gt; Package Manager Console**, като изпълните следната команда в конзолата:
+Install an additional package into the application from the menu: **Tools &gt; NuGet Package Manager &gt; Package Manager Console**, by running the following command in the console:
 
 ```
 PM> Install-Package AngleSharp -Version 0.16.1
@@ -22,7 +22,7 @@ PM> Install-Package AngleSharp -Version 0.16.1
 
 ## MainPage.xaml
 
-Файлът **MainPage.xaml** съдържа изходния код от дизайна на потребителския интерфейс на разработваното приложение и се пише на езика XAML. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение.
+The file **MainPage.xaml** contains the source code for the user interface design of the application being developed and is written in the XAML language. Copy \(Ctrl+C\) and paste \(Ctrl+V\) the program snippet given below into your application.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -52,7 +52,7 @@ PM> Install-Package AngleSharp -Version 0.16.1
 
 ## MainPage.xaml.cs
 
-Файлът **MainPage.xaml.cs** съдържа изходния код от бизнес логиката на разработваното приложение и се пише на програмният език C\#. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение.
+The file **MainPage.xaml.cs** contains the source code of the business logic of the developed application and is written in the C\# programming language. Copy \(Ctrl+C\) and paste \(Ctrl+V\) the code snippet given below into your application.
 
 ```csharp
 using System;
@@ -100,9 +100,8 @@ namespace HTML_Downloader_2._0
 
 ## Demo
 
-Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.
+Launch the application from the menu: **Debug &gt; Start Debugging** or by pressing the **F5** key.
 
 ![](/images/61_HTML_Downloader_2.0.png)
 
-_Фиг.61 Тестване на мултиплатформено мобилно приложение за изтегляне HTML съдържанието на кода от Интернет страница - Android Emulator 11 \(API 30\)._
-
+_Fig.61 Testing a cross-platform mobile application for downloading HTML content from a webpage - Android Emulator 11 (API 30)._

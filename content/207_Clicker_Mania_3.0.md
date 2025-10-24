@@ -1,16 +1,15 @@
 # Clicker Mania 3.0
 
-Използвайки интегрираната среда за разработка Visual Studio и езика за програмиране C\# ще разработим мулти-платформено мобилно приложение отчитащо броя кликове на потребителя за определено време.
+Using the integrated development environment Visual Studio and the C\# programming language, we will develop a cross-platform mobile application that tracks the number of clicks by the user over a certain period of time.
 
 ## Start
-
-1. Стартирайте интегрираната среда за разработка **Visual Studio**. 
-2. Създайте нов проект: **Visual C\# &gt; Cross-Platform &gt; Mobile App \(Xamarin.Forms\)**. 
-3. За име на проекта запишете: **Clicker Mania 3.0**.
+1. Launch the integrated development environment **Visual Studio**.
+2. Create a new project: **Visual C\# &gt; Cross-Platform &gt; Mobile App \(Xamarin.Forms\)**. 
+3. Name the project: **Clicker Mania 3.0**.
 
 ## MainPage.xaml
 
-Файлът **MainPage.xaml** съдържа изходния код от дизайна на потребителския интерфейс на разработваното приложение и се пише на езика XAML. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение
+The file **MainPage.xaml** contains the source code for the design of the application's user interface and is written in the XAML language. Copy \(Ctrl+C\) and paste \(Ctrl+V\) the code fragment provided below into your application.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -45,7 +44,7 @@
 
 ## MainPage.xaml.cs
 
-Файлът **MainPage.xaml.cs** съдържа изходния код от бизнес логиката на разработваното приложение и се пише на програмният език C\#. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение.
+The file **MainPage.xaml.cs** contains the source code of the business logic of the developed application and is written in the C\# programming language. Copy \(Ctrl+C\) and paste \(Ctrl+V\) the code snippet given below into your application.
 
 ```csharp
 using System;
@@ -88,9 +87,8 @@ namespace Clicker_Mania_3._0
 
 ## Demo
 
-Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.
+Start the application from the menu: **Debug &gt; Start Debugging** or by pressing the **F5** key.
 
 ![](/images/60_Clicker_Mania_3.0.png)
 
-_Фиг.60 Тестване на мултиплатформено мобилно приложение отчитащо броя кликове на потребителя за определено време - Android Emulator 11 \(API 30\)_
-
+_Fig.60 Testing a cross-platform mobile application that counts the number of user clicks over a certain period - Android Emulator 11 (API 30)_

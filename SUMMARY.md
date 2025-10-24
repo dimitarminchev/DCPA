@@ -2,13 +2,13 @@
 
 * [Introduction](README.md)
 
-* [Universal Windows Platform](content/101_Intorduction.md)
+* [Chapter 1. Universal Windows Platform (UWP)](content/101_Intorduction.md)
   * [History](content/102_History.md)
     * [Mobile Devices](content/103_Mobile_Devices.md)
     * [Universal Platform](content/104_Universal_Windows_Platform.md)
   * [Installation](content/105_Installation.md)
-    * [Developer Settings](content/106_Developer_Settings.md)
-    * [Developer Registration](content/107_Developer_Registration.md)
+    * [Enabling Developer Mode](content/106_Developer_Settings.md)
+    * [Registering as an App Developer](content/107_Developer_Registration.md)
     * [How to check Windows Version?](content/108_Windows_Version.md)
   * [Applications](content/109_Applications.md)
     * [Suma 1.0](content/110_Suma_1.0.md)
@@ -21,7 +21,7 @@
     * [RSS Reader 1.0](content/117_RSS_Reader_1.0.md)
     * [JSON Reader 1.0](content/118_JSON_Reader_1.0.md)
 
-* [Multiplatform Mobile Apps](content/201_Intorduction.md)
+* [Chapter 2. Multiplatform Mobile Apps (Xamarin.Forms)](content/201_Intorduction.md)
   * [History](content/202_History.md)
   * [Applications](content/203_Applications.md)
     * [Suma 2.0](content/204_Suma_2.0.md)
@@ -32,6 +32,9 @@
     * [HTML Downloader 2.0](content/208_HTML_Downloader_2.0.md)
     * [RSS Reader 2.0](content/209_RSS_Reader_2.0.md)
     * [JSON Reader 2.0](content/210_JSON_Reader_2.0.md)
+
+* [Chapter 3. Multi-Platform App User Interface (MAUI)](content/301_Intorduction.md)
+  * [History](content/302_History.md)
 
 * [Summary](content/301_Summary.md)
   * [Note](content/302_Note.md)

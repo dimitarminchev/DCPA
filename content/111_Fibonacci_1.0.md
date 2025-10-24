@@ -1,20 +1,20 @@
 # Fibonacci 1.0
 
-Използвайки интегрираната среда за разработка Visual Studio и езика за програмиране C\# ще разработим универсално приложение загенериране на числата от редицата на Фибоначи.
+Using the integrated development environment Visual Studio and the C\# programming language, we will develop a universal application for generating numbers from the Fibonacci sequence.
 
 {% hint style='info' %}
-#### Информация
-Числата на Фибоначи в математиката образуват редица, която се дефинира рекурсивно по следния начин: започва се с 0 и 1, а всеки следващ член на редицата се получава като сума на предходните два. Първите числа на Фибоначи са: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, …
-- Източник: [Wikipedia](https://en.wikipedia.org/wiki/Fibonacci_number)
+#### Information
+Fibonacci numbers in mathematics form a sequence that is defined recursively as follows: it starts with 0 and 1, and each subsequent member of the sequence is obtained as the sum of the previous two. The first Fibonacci numbers are: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, …
+- Source: [Wikipedia](https://en.wikipedia.org/wiki/Fibonacci_number)
 {% endhint %}
 
 ## Start
 
-Стартирайте интегрираната среда за разработка **Visual Studio**. Създайте нов проект от менюто посредством изпълняване на последователността: **File &gt; New &gt; Project** или използвайте съкратената клавишна комбинация **Ctrl + Shift + N**. В появилия се диалогов прозорец изберете: **Visual C\# &gt; Windows Universal &gt; Blank App \(Universal Windows\)**. За име на проекта запишете: **Fibonacci 1.0**. От Solution Explorer отворете файловете **MainPage.xaml** и **MainPage.xaml.cs**. В случай, че не виждате Solution Explorer можете да го отворите от менюто **View &gt; Solution Explorer** или като използвате съкратената клавишна последователност **Ctrl + W, S**.
+Launch the integrated development environment **Visual Studio**. Create a new project from the menu by following the sequence: **File &gt; New &gt; Project** or use the shortcut key combination **Ctrl + Shift + N**. In the dialog box that appears, select: **Visual C# > Windows Universal > Blank App (Universal Windows)**. For the project name, enter: **Fibonacci 1.0**. From the Solution Explorer, open the files **MainPage.xaml** and **MainPage.xaml.cs**. If you do not see the Solution Explorer, you can open it from the menu **View > Solution Explorer** or use the shortcut **Ctrl + W, S**. 
 
 ## MainPage.xaml
 
-Файлът **MainPage.xaml** съдържа изходния код от дизайна на потребителския интерфейс на разработваното приложение и се пише на езика XAML. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение.
+ The **MainPage.xaml** file contains the source code for the user interface design of the application being developed and is written in the XAML language. Copy \(Ctrl+C\) and paste \(Ctrl+V\) the following code snippet into your application.
 
 ```xml
 <Page
@@ -46,15 +46,15 @@
 
 ```
 
-Изглед от дизайна на потребителският интерфейс \(XAML\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
+View of the user interface design \(XAML\) in the integrated development environment Visual Studio during the application development:
 
 ![](/images/26_Fibonacci_1.0_UI.png)
 
-_Фиг. 26. Изглед от дизайна на потребителският интерфейс_
+_Fig. 26. View of the user interface design_
 
 ## MainPage.xaml.cs
 
-Файлът **MainPage.xaml.cs** съдържа изходния код от бизнес логиката на разработваното приложение и се пише на програмният език C\#. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение.
+The file **MainPage.xaml.cs** contains the source code for the business logic of the developed application and is written in the C# programming language. Copy \(Ctrl+C\) and paste \(Ctrl+V\) the code snippet given below into your application.
 
 ```csharp
 using Windows.UI.Xaml;
@@ -97,17 +97,16 @@ namespace Fibonacci_1._0
 }
 ```
 
-Изглед от бизнес логиката \(C\#\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
+View of the business logic \(C\#\) in the integrated development environment Visual Studio during application development:
 
 ![](/images/27_Fibonacci_1.0_BL.png)
 
-_Фиг. 27. Изглед от бизнес логиката на разработваното приложение_
+_Fig. 27. View of the business logic of the application under development._
 
 ## Demo
 
-Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.
+Run the application from the menu: **Debug &gt; Start Debugging** or by pressing the **F5** key.
 
 ![](/images/28_Fibonacci_1.0_Run.png)
 
-_Фиг. 28. Универсално приложение за генериране на числата от редицата на Фибоначи._
-
+_Fig. 28. Universal application for generating Fibonacci sequence numbers._

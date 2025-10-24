@@ -1,22 +1,21 @@
 # RSS Reader 1.0
 
-Използвайки интегрираната среда за разработка Visual Studio и езика за програмиране C\# ще разработим универсално приложение за четене на Интернет новинарски емисии от RSS източници.
+Using the integrated development environment Visual Studio and the C\# programming language, we will develop a universal application for reading Internet news feeds from RSS sources.
 
 {% hint style='info' %}
-#### Информация
-RSS е софтуерен механизъм за обмен на новини между два сайта или между сайт и потребител. Представлява набор от формати за захранване с информация от световната Интернет мрежа.
-- Източник: [Wikipedia](https://en.wikipedia.org/wiki/RSS)
+#### Information
+RSS is a software mechanism for exchanging news between two websites or between a website and a user. It represents a set of formats for feeding information from the World Wide Web.
+- Source: [Wikipedia](https://en.wikipedia.org/wiki/RSS)
 {% endhint %}
 
-## Start 
-
-1. Стартирайте интегрираната среда за разработка **Visual Studio**. 
-2. Създайте нов проект **Visual C\# &gt; Windows Universal &gt; Blank App \(Universal Windows\)**. 
-3. За име на проекта запишете: **RSS Reader 1.0**.
+## Start
+1. Launch the integrated development environment **Visual Studio**.
+2. Create a new project **Visual C\# &gt; Windows Universal &gt; Blank App \(Universal Windows\)**. 
+3. Name the project: **RSS Reader 1.0**.
 
 ## Item.cs
 
-Добавете нов клас **Item.cs**, който ще служи за съхранение на данни за всяка една новина от емисията.
+Add a new class **Item.cs**, which will be used to store data for each news item from the feed.
 
 ```csharp
 namespace RSS_Reader_1._0
@@ -32,7 +31,7 @@ namespace RSS_Reader_1._0
 
 ## MainPage.xaml
 
-Файлът **MainPage.xaml** съдържа изходния код от дизайна на потребителския интерфейс на разработваното приложение и се пише на езика XAML. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение.
+The file **MainPage.xaml** contains the source code from the user interface design of the application being developed and is written in the XAML language. Copy \(Ctrl+C\) and paste \(Ctrl+V\) the program snippet given below into your application.
 
 ```xml
 <Page
@@ -76,15 +75,15 @@ namespace RSS_Reader_1._0
 </Page>
 ```
 
-Изглед от дизайна на потребителският интерфейс \(XAML\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
+View of the user interface design \(XAML\) in the integrated development environment Visual Studio during the development of the application:
 
 ![](/images/44_RSS_Reader_1.0_UI.png)
 
-_Фиг. 44. Изглед от дизайна на потребителският интерфейс_
+_Fig. 44. View of the user interface design_
 
 ## MainPage.xaml.cs
 
-Файлът **MainPage.xaml.cs** съдържа изходния код от бизнес логиката на разработваното приложение и се пише на програмният език C\#. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение.
+The **MainPage.xaml.cs** file contains the source code for the business logic of the developed application and is written in the C\# programming language. Copy \(Ctrl+C\) and paste \(Ctrl+V\) the code snippet provided below into your application.
 
 ```csharp
 using System;
@@ -141,14 +140,14 @@ namespace RSS_Reader_1._0
 
 ## Demo 
 
-Изглед от бизнес логиката \(C\#\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
+View of the business logic \(C\#\) in the integrated development environment Visual Studio during application development:
 
 ![](/images/45_RSS_Reader_1.0_BL.png)
 
-_Фиг. 45. Изглед от бизнес логиката на разработваното приложение_
+_Fig. 45. View of the business logic of the application under development_
 
-Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.
+Start the application from the menu: **Debug &gt; Start Debugging** or by pressing the **F5** key.
 
 ![](/images/46_RSS_Reader_1.0_Run.png)
 
-_Фиг.46 Универсално приложение за четене на Интернет новинарски емисии от RSS източници_
+_Fig. 46. Universal application for reading Internet news feeds from RSS sources_

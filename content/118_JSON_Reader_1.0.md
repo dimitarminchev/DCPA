@@ -1,20 +1,20 @@
 # JSON Reader 1.0
 
-Използвайки интегрираната среда за разработка Visual Studio и езика за програмиране C\# ще разработим универсално приложение за изтегляне на вицове за Чък Норис във формат [JSON](https://www.json.org/).
+Using the integrated development environment Visual Studio and the programming language C\#, we will develop a universal application for downloading Chuck Norris jokes in [JSON](https://www.json.org/) format. 
 
 {% hint style='info' %}
-#### Информация
-JSON или JavaScript Object Notation, е текстово базиран отворен стандарт създаден за човешки четим обмен на данни. Произлиза от скриптовия език JavaScript, за да представя прости структури от данни и асоциативни масиви, наречени обекти.
-- Източник: [Wikipedia](https://en.wikipedia.org/wiki/JSON)
+#### Information 
+JSON or JavaScript Object Notation is a text-based open standard designed for human-readable data exchange. It originates from the JavaScript scripting language to represent simple data structures and associative arrays called objects. 
+- Source: [Wikipedia](https://en.wikipedia.org/wiki/JSON)
 {% endhint %}
 
-## Start
+## Start 
 
-1. Стартирайте интегрираната среда за разработка **Visual Studio**. 
-2. Създайте нов проект: **Visual C\# &gt; Windows Universal &gt; Blank App \(Universal Windows\)**. 
-3. За име на проекта запишете: **JSON Reader 1.0**.
+1. Launch the integrated development environment **Visual Studio**. 
+2. Create a new project: **Visual C\# &gt; Windows Universal &gt; Blank App \(Universal Windows\)**. 
+3. Name the project: **JSON Reader 1.0**. 
 
-Добавете допълнителни пакети към проекта като инсталирате: **NewtownSoft.Json** и **AngleSharp**, от менюто: **Tools &gt; NuGet Package Manager &gt; Package Manager Console**, като изпълните следните команди в конзолата:
+Add additional packages to the project by installing: **NewtonSoft.Json** and **AngleSharp**, from the menu: **Tools &gt; NuGet Package Manager &gt; Package Manager Console**, by executing the following commands in the console:
 
 ```
 PM> Install-Package Newtonsoft.Json -Version 13.0.1
@@ -23,7 +23,7 @@ PM> Install-Package AngleSharp -Version 0.16.1
 
 #### **Root.cs**
 
-Добавете нов клас **Root.cs**, който ще служи за десериализиране на данните от консумираната услуга.
+Add a new class **Root.cs**, which will be used for deserializing the data from the consumed service.
 
 ```csharp
 namespace JSON_Reader_1._0
@@ -41,13 +41,13 @@ namespace JSON_Reader_1._0
 }
 ```
 
-> #### Бележка
-> 1. Заредете и копирайте примерен JSON от: https://api.chucknorris.io/jokes/random
-> 2. Генерирайте C# класа на избрания JSON от: http://json2csharp.com/
+> #### Note
+> 1. Load and copy sample JSON from: https://api.chucknorris.io/jokes/random
+> 2. Generate the C# class of the selected JSON from: http://json2csharp.com/
 
 ## MainPage.xaml
 
-Файлът **MainPage.xaml** съдържа изходния код от дизайна на потребителския интерфейс на разработваното приложение и се пише на езика XAML. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение.
+The **MainPage.xaml** file contains the source code from the user interface design of the application being developed and is written in the XAML language. Copy \(Ctrl+C\) and paste \(Ctrl+V\) the program snippet given below into your application.
 
 ```xml
 <Page
@@ -79,15 +79,15 @@ namespace JSON_Reader_1._0
 </Page>
 ```
 
-Изглед от дизайна на потребителският интерфейс \(XAML\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
+View of the user interface design \(XAML\) in the integrated development environment Visual Studio during the development of the application:
 
 ![](/images/47_JSON_Reader_1.0_UI.png)
 
-_Фиг. 47. Изглед от дизайна на потребителският интерфейс_
+_Fig. 47. View of the user interface design_#
 
-## MainPage.xaml.cs
+# MainPage.xaml.cs
 
-Файлът **MainPage.xaml.cs** съдържа изходния код от бизнес логиката на разработваното приложение и се пише на програмният език C\#. Копирайте \(Ctrl+C\) и поставете \(Ctrl+V\) програмният фрагмент даден по-долу във Вашето приложение.
+The file **MainPage.xaml.cs** contains the source code for the business logic of the developed application and is written in the C\# programming language. Copy \(Ctrl+C\) and paste \(Ctrl+V\) the program snippet given below into your application.
 
 ```csharp
 using System;
@@ -152,17 +152,16 @@ namespace JSON_Reader_1._0
 }
 ```
 
-Изглед от бизнес логиката \(C\#\) в интегрираната среда за разработка Visual Studio по време на разработване на приложението:
+View of the business logic \(C\#\) in the integrated development environment Visual Studio during application development:
 
 ![](/images/48_JSON_Reader_1.0_BL.png)
 
-_Фиг. 48. Изглед от бизнес логиката на разработваното приложение_
+_Fig. 48. View of the business logic of the application under development_
 
 ## Demo
 
-Стартирайте приложението от менюто: **Debug &gt; Start Debugging** или като натиснете клавиш **F5**.  
+Run the application from the menu: **Debug > Start Debugging** or by pressing the **F5** key.
 
 ![](/images/49_JSON_Reader_1.0_Run.png)
 
-_Фиг.49 Универсално приложение за изтегляне на вицове за Чък Норис_
-
+_Fig. 49. Universal application for downloading Chuck Norris jokes_

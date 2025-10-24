@@ -1,16 +1,16 @@
-# Включване на режима за разработчици
+# Enabling Developer Mode
 
-За да разработвате универсални приложения за платформа Windows е необходимо да включите операционната система в режим за разработчици, както е показано на Фиг. 16 (a) и Фиг. 16 (b).
+To develop universal applications for the Windows platform, it is necessary to enable the operating system in Developer Mode, as shown in Fig. 16 (a) and Fig. 16 (b).
 
 ![](/images/16a_Developer_Settings.png)
 
-_Фиг.16 (a). Включване на режима за разработчици_
+_Fig.16 (a). Enabling Developer Mode_
 
 ![](/images/16b_Developer_Settings.png)
 
-_Фиг.16 (b) Включване на режима за разработчици_
+_Fig.16 (b). Enabling Developer Mode_
 
 {% hint style='danger' %}
-#### Забележка
-На фигурите е показано включване на режима за разработчици в операционната система Microsoft Windows 11.
+#### Note
+The figures show how to enable Developer Mode in the Microsoft Windows 11 operating system.
 {% endhint %}

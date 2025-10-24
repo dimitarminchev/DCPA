@@ -1,12 +1,11 @@
-# Регистриране като разработчик на приложения
+# Registering as an App Developer
 
-За да публикувате приложения за Windows платформата е необходимо да се регистрирате като разработчик в центъра за разработчици, наречен **Microsoft Partner Center**. Порталът предоставя възможността за публикуване в магазина за приложения наречен **Microsoft Store**.
+To publish applications for the Windows platform, you need to register as a developer in the developer center called **Microsoft Partner Center**. The portal provides the option to publish in the app store called **Microsoft Store**.
 
-Регистрацията е достъпна в Интернет на адрес: [https://developer.microsoft.com/en-us/microsoft-store/register/](https://developer.microsoft.com/en-us/microsoft-store/register/).
+Registration is available online at: [https://developer.microsoft.com/en-us/microsoft-store/register/](https://developer.microsoft.com/en-us/microsoft-store/register/).
 
-Регистрацията като разработчик на приложения в центъра за разработчици се заплаща с еднократна такса от **19** американски долара за индивидуални потребители и **99** американски долара за корпоративни клиенти. 
+Registering as an app developer in the developer center requires a one-time fee of **$19** for individual users and **$99** for corporate clients.
 
 ![](/images/17_Microsoft_Partner_Center.png)
 
-_Фиг. 17. Център за разработчици на Microsoft_
-
+_Fig. 17. Microsoft Developer Center_ 
