@@ -1,26 +1,26 @@
 # Developing Cross-Platform Apps
-Настоящият проект **Developing Cross-Platform Apps** представя Microsoft технологиите за разработка на **Универсални Windows приложения** и **Mултиплатформени мобилни приложения**.
-Учебното пособие е налично за свободно четене под формата на [електронна книга](https://dimitar-minchev.gitbook.io/developing-cross-platform-apps/). 
-Учебните ресурси са налични за свободно изтегляне от [електронно хранилище](https://github.com/dimitarminchev/DCPA/).
-Всични материали се разпространяват под лиценз [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+This project **Developing Cross-Platform Apps** presents Microsoft technologies for developing **Universal Windows applications** and **Cross-platform mobile applications**.
+The tutorial is available for free reading in the form of an [e-book](https://dimitar-minchev.gitbook.io/developing-cross-platform-apps/).
+The educational resources are available for free download from the [electronic repository](https://github.com/dimitarminchev/DCPA/).
+All materials are distributed under the [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
-| Формат | ISBN |
+| Format | ISBN |
 | :--- | :--- |
 | [PDF](book.pdf) | 978-619-7126-66-2 |
 | [MOBI](book.mobi) | 978-619-7126-67-9 |
 | [EPUB](book.epub) | 978-619-7126-68-6 |
 
-## Автор
+## Author
 
-**Димитър Минчев** е университетски преподавател към Център по информатика и технически науки при Бургаски свободен университет. 
-Подготвя студенти за [Републиканската студентска олимпиада по програмиране](http://www.bcpc.eu/) в [Клуб по състезателно програмиране](https://dev.bfu.bg/).
-Организира съревнование за разработка на настолни и мобилни приложения [ХАКАТОН @ БСУ](https://dev.bfu.bg/hackathon/).
-Създава уникалните [Академията за таланти по програмиране](http://atp.bfu.bg/) и [Школа по роботика](http://robots.bfu.bg/) за ученици от Бургас.
-Инициира ученическото състезание по програмиране [CODE@BURGAS](https://spoj.bfu.bg/).
-Участва в националната програма [Обучение за ИТ умения и кариера](https://github.com/dimitarminchev/ITCareer) на Министерството на образованието и науката.
+**Dimitar Minchev** is a university lecturer at the Center for Informatics and Technical Sciences at Burgas Free University.
+He prepares students for the [Republican Student Programming Olympiad](http://www.bcpc.eu/) in the [Competitive Programming Club](https://dev.bfu.bg/).
+He organizes a competition for the development of desktop and mobile applications [HACKATHON @ BFU](https://dev.bfu.bg/hackathon/).
+He created the unique [Programming Talent Academy](http://atp.bfu.bg/) and [Robotics School](http://robots.bfu.bg/) for students from Burgas.
+He initiated the student programming competition [CODE@BURGAS](https://spoj.bfu.bg/).
+Participates in the national program [Training for IT Skills and Career](https://github.com/dimitarminchev/ITCareer) of the Ministry of Education and Science.
 
-| Контакт |
+| Contact |
 | :--- |
-| Служебен: тел. +359 56 900 477 и e-mail: [mitko@bfu.bg](http://www.minchev.eu/about/mitko@bfu.bg) |
-| Личен:  моб. +359 899 148 872 и e-mail: [dimitar.minchev@gmail.com](mailto:dimitar.minchev@gmail.com) |
-| Блог: [http://www.minchev.eu](http://www.minchev.eu "Димитър Минчев") |
+| Official: tel. +359 56 900 477 and e-mail: [mitko@bfu.bg](http://www.minchev.eu/about/mitko@bfu.bg) |
+| Personal: mobile +359 899 148 872 and e-mail: [dimitar.minchev@gmail.com](mailto:dimitar.minchev@gmail.com) |
+| Blog: [http://www.minchev.eu](http://www.minchev.eu "Dimitar Minchev") |
