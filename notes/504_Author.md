@@ -1,16 +1,4 @@
-# Developing Cross-Platform Apps
-This project **Developing Cross-Platform Apps** presents Microsoft technologies for developing cross-platform applications.
-The tutorial is available to read for free as an [e-book](https://dimitar-minchev.gitbook.io/developing-cross-platform-apps/).
-The learning resources are available for free download from the project's [repository](https://github.com/dimitarminchev/DCPA/).
-All materials are distributed under the [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
-
-| Format | ISBN |
-| :--- | :--- |
-| [PDF](download/book.pdf.7z) | 978-619-7126-66-2 |
-| [MOBI](download/book.mobi.7z) | 978-619-7126-67-9 |
-| [EPUB](download/book.epub.7z) | 978-619-7126-68-6 |
-
-## Author
+# Author
 
 **Dimitar Minchev** is a university lecturer at the Faculty of Informatics and Technical Sciences at Burgas Free University.
 He prepares students for the [Republican Student Programming Olympiad](http://www.bcpc.eu/) through the [Competitive Programming Club](https://dev.bfu.bg/).
