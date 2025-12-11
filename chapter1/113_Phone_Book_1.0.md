@@ -5,11 +5,8 @@
 ## Contact.cs
 
 ```csharp
-using System;
-namespace Phone_Book_1._0
+public class Contact
 {
-    public class Contact
-    {
         public Uri picture { get; set; }
         public string name { get; set; }
         public string phone { get; set; }
@@ -20,7 +17,6 @@ namespace Phone_Book_1._0
             this.name = _name;
             this.phone = _phone;
         }
-    }
 }
 ```
 
