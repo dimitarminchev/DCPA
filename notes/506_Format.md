@@ -5,6 +5,6 @@
 
 | Формат | ISBN | Barcode |
 | :--- | :--- | :--- |
-| [PDF](/download/dcpa_bg.pdf) | 978-619-7126-66-2 | ![](/images/978-619-7126-66-2.gif) |
-| [MOBI](/download/dcpa_bg.mobi) | 978-619-7126-67-9 | ![](/images/978-619-7126-67-9.gif) |
-| [EPUB](/download/dcpa_bg.epub) | 978-619-7126-68-6 | ![](/images/978-619-7126-68-6.gif) |
+| [PDF](/download/dcpa_bg.pdf.7z) | 978-619-7126-66-2 | ![](/images/978-619-7126-66-2.gif) |
+| [MOBI](/download/dcpa_bg.mobi.7z) | 978-619-7126-67-9 | ![](/images/978-619-7126-67-9.gif) |
+| [EPUB](/download/dcpa_bg.epub.7z) | 978-619-7126-68-6 | ![](/images/978-619-7126-68-6.gif) |
