@@ -43,7 +43,7 @@
   * [История](chapter4/402_History.md)
   * [Инсталация](chapter4/403_Installation.md) 
   * [Приложения](chapter4/404_Applications.md)
-      * [Suma 4.0](chapter4/405_Suma_3.0.md)
+      * [Suma 4.0](chapter4/405_Suma_4.0.md)
 
 * [Заключение](notes/501_Summary.md)
   * [Бележка](notes/502_Note.md)

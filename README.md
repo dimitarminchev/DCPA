@@ -4,11 +4,11 @@
 Учебните ресурси са налични за свободно изтегляне от [електронно хранилище](https://github.com/dimitarminchev/DCPA/).
 Всични материали се разпространяват под лиценз [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-| Формат | ISBN | Barcode |
-| :--- | :--- | :--- |
-| [PDF](download/dcpa_bg.pdf) | 978-619-7126-66-2 | ![](footnote/images/978-619-7126-66-2.gif) |
-| [MOBI](download/dcpa_bg.mobi) | 978-619-7126-67-9 | ![](footnote/images/978-619-7126-67-9.gif) |
-| [EPUB](download/dcpa_bg.epub) | 978-619-7126-68-6 | ![](footnote/images/978-619-7126-68-6.gif) |
+| Формат | ISBN | 
+| :--- | :--- |
+| [PDF](download/dcpa_bg.pdf) | 978-619-7126-66-2 | 
+| [MOBI](download/dcpa_bg.mobi) | 978-619-7126-67-9 |
+| [EPUB](download/dcpa_bg.epub) | 978-619-7126-68-6 | 
 
 ## Автор
 
