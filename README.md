@@ -6,9 +6,9 @@ All materials are distributed under the [CC-BY-NC-SA](https://creativecommons.or
 
 | Format | ISBN |
 | :--- | :--- |
-| [PDF](download/book.pdf.7z) | 978-619-7126-66-2 |
-| [MOBI](download/book.mobi.7z) | 978-619-7126-67-9 |
-| [EPUB](download/book.epub.7z) | 978-619-7126-68-6 |
+| [PDF](download/book.pdf) | 978-619-7126-66-2 |
+| [MOBI](download/book.mobi) | 978-619-7126-67-9 |
+| [EPUB](download/book.epub) | 978-619-7126-68-6 |
 
 ## Author
 

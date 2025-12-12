@@ -6,6 +6,6 @@
 
 | Format | ISBN | Barcode |
 | :--- | :--- | :--- |
-| [PDF](/download/book.pdf.7z) | 978-619-7126-66-2 | ![](/images/978-619-7126-66-2.gif) |
-| [MOBI](/download/book.mobi.7z) | 978-619-7126-67-9 | ![](/images/978-619-7126-67-9.gif) |
-| [EPUB](/download/book.epub.7z) | 978-619-7126-68-6 | ![](/images/978-619-7126-68-6.gif) |
+| [PDF](/download/book.pdf) | 978-619-7126-66-2 | ![](/images/978-619-7126-66-2.gif) |
+| [MOBI](/download/book.mobi) | 978-619-7126-67-9 | ![](/images/978-619-7126-67-9.gif) |
+| [EPUB](/download/book.epub) | 978-619-7126-68-6 | ![](/images/978-619-7126-68-6.gif) |
